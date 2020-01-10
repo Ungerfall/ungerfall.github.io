@@ -20,13 +20,10 @@ email: ungerfall@gmail.com
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "ungerfall.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-minima:
-
-  # generate social links in footer
-  social_links:
-    github: ungerfall
-    rss: rss
-    telegram: ungerfall
+# social_links:
+  github_username: ungerfall
+  rss: rss
+  telegram_username: ungerfall
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
@@ -64,3 +61,4 @@ theme: minima
 #   - vendor/ruby/
 plugins:
  - jekyll-feed
+ - jekyll-seo-tag
