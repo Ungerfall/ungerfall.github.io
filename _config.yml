@@ -21,9 +21,9 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "ungerfall.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # social_links:
-  github_username: ungerfall
-  rss: rss
-  telegram_username: ungerfall
+github_username: ungerfall
+rss: rss
+telegram_username: ungerfall
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
