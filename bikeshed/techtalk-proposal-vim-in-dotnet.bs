@@ -3,12 +3,12 @@ Title: VIM in .NET - tecktalk proposal
 Shortname: vimindotnet
 Level: 1
 Date: 2020-07-12
-Status: D
+Status: DREAM
 URL: https://ungerfall.github.io/bikeshed/techtalk-proposal-vim-in-dotnet
 
-Editor: Leonid Petrov, EPAM Systems http://www.epam.com/, ungerfall@gmail.com, ungerfall.github.io
+Editor: Leonid Petrov, EPAM Systems http://www.epam.com/, ungerfall@gmail.com
 
-Abstract: Документ содержит предложение проверки технический доклад на тему vim в .net
+Abstract: Р”РѕРєСѓРјРµРЅС‚ СЃРѕРґРµСЂР¶РёС‚ РїСЂРµРґР»РѕР¶РµРЅРёРµ РїСЂРѕРІРµСЂРєРё С‚РµС…РЅРёС‡РµСЃРєРёР№ РґРѕРєР»Р°Рґ РЅР° С‚РµРјСѓ vim РІ .net 
 
 </pre>
 
