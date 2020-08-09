@@ -15,4 +15,13 @@ Task                                                           Duration
 [task name]                                                    hh:MM:ss.fffffff
 ```
 So, when total build time exceeds expectations I like to see which task slows 
-down the process. Normally I would use `:sort` 
+down the process. Normally I would use `:sort`, however it sorts text 
+lexicographically. To cope with this we need to move duration column to the 
+leftmost side by using `visual block mode` and then proceed with `:sort`. 
+The whole process you can see below by clicking on the expand button  
+<details>
+  <summary>Click to expand<summary>
+  ![vim-sort](/assets/vim-sort.gif)
+</details>
+The `:sort` command has additional attributes, for example, you can sort in 
+descending order adding `-h` argument. More details: `:help :sort`
