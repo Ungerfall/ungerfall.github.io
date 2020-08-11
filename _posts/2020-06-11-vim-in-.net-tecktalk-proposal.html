@@ -1,7 +1,7 @@
 <!doctype html><html lang="en">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>VIM in .NET - tecktalk proposal</title>
+  <title>VIM in .NET - techtalk proposal</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 <style data-fill-with="stylesheet">/******************************************************************************
  *                   Style sheet for the W3C specifications                   *
@@ -1221,7 +1221,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 40de15f9, updated Thu Jun 11 17:47:04 2020 -0700" name="generator">
+  <meta content="Bikeshed version 22d05d56, updated Sun Aug 9 20:27:34 2020 -0700" name="generator">
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1370,13 +1370,14 @@ a.self-link::before            { content: "¶"; }
 .heading > a.self-link::before { content: "§"; }
 dfn > a.self-link::before      { content: "#"; }</style>
  <body class="h-entry">
+  <div class="head">
    <p data-fill-with="logo"></p>
-   <h1 class="p-name no-ref" id="title">VIM in .NET - tecktalk proposal</h1>
+   <h1 class="p-name no-ref" id="title">VIM in .NET - techtalk proposal</h1>
    <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">A Collection of Interesting Ideas, <time class="dt-updated" datetime="2020-07-12">12 July 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt class="editor">Editors:
-     <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:ungerfall@gmail.com">Leonid Petrov</a> (<a class="p-org org" href="http://www.epam.com/">EPAM Systems</a>)
+     <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:Leonid_Petrov1@epam.com">Leonid Petrov</a> (<a class="p-org org" href="http://www.epam.com/">EPAM Systems</a>)
      <dd class="editor p-author h-card vcard"><span class="p-name fn"></span>
     </dl>
    </div>
@@ -1391,22 +1392,69 @@ Parts of this work may be from another specification document.  If so, those par
   </div>
   <div class="p-summary" data-fill-with="abstract">
    <h2 class="no-num no-toc no-ref heading settled" id="abstract"><span class="content">Abstract</span></h2>
-   <p>Документ содержит предложение проверки технический доклад на тему vim в .net</p>
+   <p>Документ содержит предложение проведения технического доклада на</p>
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
-    <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
+    <li><a href="#intro"><span class="secno">1</span> <span class="content">Вступление</span></a>
+    <li><a href="#motivation"><span class="secno">2</span> <span class="content">Мотивация</span></a>
+    <li><a href="#audience"><span class="secno">3</span> <span class="content">Кому будет интересна тема</span></a>
     <li>
-     <a href="#references"><span class="secno"></span> <span class="content">References</span></a>
+     <a href="#agenda"><span class="secno">4</span> <span class="content">Состав доклада</span></a>
      <ol class="toc">
-      <li><a href="#normative"><span class="secno"></span> <span class="content">Normative References</span></a>
+      <li><a href="#agenda-intro"><span class="secno">4.1</span> <span class="content">Вступление. 10 минут</span></a>
+      <li><a href="#agenda-indotnet"><span class="secno">4.2</span> <span class="content">In .net. 20 минут</span></a>
+      <li><a href="#agenda-showcase"><span class="secno">4.3</span> <span class="content">Vim in action. 20 минут</span></a>
+      <li><a href="#agenda-qa"><span class="secno">4.4</span> <span class="content">Q&amp;A. 5+ минут</span></a>
      </ol>
+    <li><a href="#whats-left"><span class="secno">5</span> <span class="content">Что осталось сделать</span></a>
+    <li><a href="#when"><span class="secno">6</span> <span class="content">Когда</span></a>
+    <li><a href="#suggestions"><span class="secno">7</span> <span class="content">Предложения</span></a>
    </ol>
   </nav>
   <main>
-   <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="#intro"></a></h2>
+   <h2 class="heading settled" data-level="1" id="intro"><span class="secno">1. </span><span class="content">Вступление</span><a class="self-link" href="#intro"></a></h2>
+    <a href="https://www.vim.org/">Vim</a> является широко известным текстовым редактором, 
+который легко расширяется и настраивается. Отличительной особенностью редактора 
+являются режимы работы: нормальный, режим ввода, режим выделения и другие.
+Для мира .net он предлагает довольно интересные инструменты. Начиная с <a href="https://github.com/OmniSharp/omnisharp-vim">IDE like plugin omnisharp-vim</a> и <a href="https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim">расширение для Visual Studio</a> 
+   <h2 class="heading settled" data-level="2" id="motivation"><span class="secno">2. </span><span class="content">Мотивация</span><a class="self-link" href="#motivation"></a></h2>
+    Для меня лично этот доклад является возможностью внести небольшой вкад в 
+.net community Ижевска, до этого я только потреблял контент. Также получить 
+опыт в роли спикера. 
+   <h2 class="heading settled" data-level="3" id="audience"><span class="secno">3. </span><span class="content">Кому будет интересна тема</span><a class="self-link" href="#audience"></a></h2>
+    Хотя данная тема не имеет промышленной пользя для разработчиков, в первую 
+очередь будет интересна тем, кто хочет узнать больше об истории редактора, 
+расширить кругозор и тем, кто хотел начать использовать Vim. 
+   <h2 class="heading settled" data-level="4" id="agenda"><span class="secno">4. </span><span class="content">Состав доклада</span><a class="self-link" href="#agenda"></a></h2>
+    Будет состоять из 4 частей общей длительностью 55 минут 
+   <h3 class="heading settled" data-level="4.1" id="agenda-intro"><span class="secno">4.1. </span><span class="content">Вступление. 10 минут</span><a class="self-link" href="#agenda-intro"></a></h3>
+    Раскажу об истории Vim, основные релизы и даты выхода инструментов, которые 
+имеют отношение к .net (omnisharp, vsvim и др.). И краткий ввод в команды,
+режима Vim. 
+   <h3 class="heading settled" data-level="4.2" id="agenda-indotnet"><span class="secno">4.2. </span><span class="content">In .net. 20 минут</span><a class="self-link" href="#agenda-indotnet"></a></h3>
+    В этой части расскажу и покажу omnisharp плагин, vsvim дополнение к Visual 
+studio. Еще затрону тему очень популярного вопроса vsvim vs Resharper. 
+   <h3 class="heading settled" data-level="4.3" id="agenda-showcase"><span class="secno">4.3. </span><span class="content">Vim in action. 20 минут</span><a class="self-link" href="#agenda-showcase"></a></h3>
+    Эта часть будет в режиме demo-showcase. Я покажу, как использую vim ежедневно 
+и чем он помагает режать задачи связанные с обработкой текста. Эта часть 
+прямого отношения к .net не имеет. Детали я уже описал в <a href="https://ungerfall.github.io/2020/08/04/daily-r2outines-with-vim-help.html">посте</a> 
+   <h3 class="heading settled" data-level="4.4" id="agenda-qa"><span class="secno">4.4. </span><span class="content">Q&amp;A. 5+ минут</span><a class="self-link" href="#agenda-qa"></a></h3>
+    Стандартная Q&amp;A сессия. 
+   <h2 class="heading settled" data-level="5" id="whats-left"><span class="secno">5. </span><span class="content">Что осталось сделать</span><a class="self-link" href="#whats-left"></a></h2>
+   <ol>
+    <li data-md>
+     <p>Презентация</p>
+    <li data-md>
+     <p>Погрубже разобрать OmniSharp</p>
+   </ol>
+   <h2 class="heading settled" data-level="6" id="when"><span class="secno">6. </span><span class="content">Когда</span><a class="self-link" href="#when"></a></h2>
+    Если есть окно, то в начале сентября. 
+   <h2 class="heading settled" data-level="7" id="suggestions"><span class="secno">7. </span><span class="content">Предложения</span><a class="self-link" href="#suggestions"></a></h2>
+    Открыт к предложениям к улучшению. Также могу этот толк совместить с 
+кем-нибудь другим, кто хотел бы рассказать о другом текстовом редакторе. 
   </main>
 <script>
 (function() {
@@ -1537,5 +1585,3 @@ Parts of this work may be from another specification document.  If so, those par
 
 })();
 </script>
-  <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="#references"></a></h2>
-  <h3 class="no-num no-ref heading settled" id="normative"><span class="content">Normative References</span><a class="self-link" href="#normative"></a></h3>
