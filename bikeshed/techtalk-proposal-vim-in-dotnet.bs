@@ -2,7 +2,7 @@
 Title: VIM in .NET - techtalk proposal
 Shortname: vimindotnet
 Level: 1
-Date: 2020-07-12
+Date: 2020-06-11
 Markup Shorthands: markdown yes
 Status: DREAM
 URL: https://ungerfall.github.io/bikeshed/techtalk-proposal-vim-in-dotnet
