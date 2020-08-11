@@ -9,8 +9,7 @@ URL: https://ungerfall.github.io/bikeshed/techtalk-proposal-vim-in-dotnet
 
 Editor: Leonid Petrov, EPAM Systems http://www.epam.com/, Leonid_Petrov1@epam.com
 
-Abstract: Документ содержит предложение проведения технического доклада на 
-тему Vim в .net
+Abstract: Документ содержит предложение проведения технического доклада на тему Vim в .net
 
 </pre>
 
