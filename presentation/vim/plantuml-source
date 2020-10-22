@@ -1,0 +1,5 @@
+@startuml
+vim -> "temp file" : dsl
+"temp file" -> plantuml : text over pipe
+plantuml -> vim : diagram
+@enduml

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+
+	<configSections>
+		<section name="Initialization" type="Testing.Configuration.Initialization.InitializationSection, Testing"/>
+		<section name="Settings" type="Testing.Configuration.Settings.SettingsSection, Testing"/>
+	</configSections>
+
+	<Initialization>
+		<Deploy Server="EPRUIZHW0333" Database="SOBOS1_2016_10_17_Autotests_6NDFL" Login="sa" Password="utcC%NKhw9PnXNg@p"/>
+		<Test Login="test" Password="Citibank_1"/>
+
+		<Database RestoreFrom="Backup"/>
+		
+		<RestoreFromBackup>
+			<BackupPath value="F:\development\database\backup\SobosTaxesTest_2016_10_17.bak"/>
+			<DatabaseFolder value="C:\dev\database\test-cases"/>
+			<Build Install="true" SourceDirectory="F:\development\sobos\test-cases\build" OutputDirectory="F:\development\sobos\test-cases\build\out"/>
+			<Snapshot Name="SOBOS1_2016_10_17_Autotests_6NDFL_snap" Folder="C:\dev\database\test-cases"/>
+		</RestoreFromBackup>
+
+		<RestoreFromSnapshot>
+			<SnapshotName value="SOBOS1_2016_10_17_Autotests_6NDFL_snap"/>
+		</RestoreFromSnapshot>
+	</Initialization>
+
+	<Settings>
+		<TestCases>
+      <TestCase Name="tax3134.xlsx" Path="F:\development\sobos\test-cases\tax3134.xlsx" Type="TaxCalculations" />
+		</TestCases>
+		<Log FileName="log.txt"/>
+	</Settings>
+
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2"/></startup></configuration>
+
