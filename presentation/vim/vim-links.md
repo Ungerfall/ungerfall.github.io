@@ -4,3 +4,4 @@
 2. [spacevim](https://spacevim.org/)
 3. [vim-antipatterns](https://sanctum.geek.nz/arabesque/vim-anti-patterns/)
 4. [put-text-into-external-command](https://stackoverflow.com/questions/7867356/piping-buffer-to-external-command-in-vim)
+5. [vim-adventures](https://vim-adventures.com/)
