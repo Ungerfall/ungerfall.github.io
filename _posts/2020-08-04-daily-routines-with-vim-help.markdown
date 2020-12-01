@@ -19,7 +19,6 @@ down the process. Normally I would use `:sort`, however it sorts text
 lexicographically. To cope with this we need to move duration column to the 
 leftmost side by using `visual block mode` and then proceed with `:sort`. 
 The whole process you can see below by clicking on the expand button  
-![sequence](/assets/azure-workshop-sequence.png)  
 <details>
   <summary>Click to expand<summary>
   ![vim-sort](/assets/vim-sort.gif)
