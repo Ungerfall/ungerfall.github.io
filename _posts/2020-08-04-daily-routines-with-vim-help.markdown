@@ -24,4 +24,5 @@ The whole process you can see below by clicking on the expand button
   ![vim-sort](/assets/vim-sort.gif)
 </details>
 The `:sort` command has additional attributes, for example, you can sort in 
-descending order adding `-h` argument. More details: `:help :sort`
+descending order adding `-h` argument. More details: `:help :sort`  
+![sequence](/assets/azure-workshop-sequence.png)
