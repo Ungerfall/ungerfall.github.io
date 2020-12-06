@@ -5,11 +5,10 @@ Level: 1
 Date: 2020-11-15
 Markup Shorthands: markdown yes
 Status: DREAM
-URL: https://ungerfall.github.io/bikeshed/workshop-proposal-codefirst-serverless-azure-solutions
+URL: https://ungerfall.github.io/2020/12/01/workshop-proposal-codefirst-serverless-azure-solutions.html 
 
 Editor: Leonid Petrov, EPAM Systems http://www.epam.com/, Leonid_Petrov1@epam.com
 
-:wqa
 Abstract: Документ содержит описание проведения практического курса на тему codefirst serverless azure solutions
 
 </pre>
