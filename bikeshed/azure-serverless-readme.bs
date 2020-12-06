@@ -1,0 +1,74 @@
+<pre class='metadata'>
+Title: Code-first serverless azure solutions
+Shortname: azureserverless
+Level: 1
+Date: 2020-12-10
+Markup Shorthands: markdown yes
+Status: DREAM
+URL: https://ungerfall.github.io/2020/12/10/codefirst-serverless-azure-solutions.html 
+
+Editor: Leonid Petrov, EPAM Systems http://www.epam.com/, Leonid_Petrov1@epam.com
+
+Abstract: Руководство участника практического курса.
+
+</pre>
+
+Пререквизиты {#prerequisites}
+==============================
+Для начала работы на вашем компьютере должны быть:
+1. Установлен Visual studio 2017+. [Скачать](https://visualstudio.microsoft.com/downloads/)
+2. Установлен Azure development workload в Visual studio.
+3. Установлен Azure CLI и обновлен до последней версии. [Скачать](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+4. Azure subscription. Если у вас её нет, то [создайте бесплатный аккаунт](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio). **Важно**: можно участовать и без подписки с помощью локальной отладки функций.
+5. Альтернативно, вы можете участвовать [используя Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp) или [Azure portal](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-azure-function), однако демонстрация воркшопа будет в Visual studio.
+
+Создание ресурсов Azure {#azure-resources}
+==========================================
+1. Откроем shell. Bash или https://shell.azure.com/ 
+2. Войдём в azure
+
+``` bash
+az login
+```
+3. Создадим [ресурсную группу](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
+
+``` bash
+GROUP=workshop-serverless-rg
+az group create --location westeurope \
+  --name $GROUP \
+  --output table
+```
+4. Создадим [Storage account](https://azure.microsoft.com/en-us/services/storage/)
+
+``` bash
+STORAGE=workshopserverlesssa
+az storage account create --name $STORAGE \
+  -g $GROUP \
+  -l westeurope \
+  --sku Standard_LRS \
+  --output table
+```
+5. Создадим [Functions App](https://azure.microsoft.com/en-us/services/functions/)
+
+``` bash
+FUNCTION=workshop-fapp-$RANDOM
+az functionapp create --name $FUNCTION \
+  -g $GROUP \
+  -s $STORAGE \
+  --consumption-plan-location westeurope \
+  --functions-version 3 \
+  --os-type Windows \
+  --runtime dotnet \
+  --runtime-version 3
+```
+
+Разработка функции в Visual studio {#visual-studio-development}
+================================================================
+1. Откроем Visual studio.
+2. Создадим новый проект по шаблону Functions App
+3. Выберем Azure Functions v3 и HTTP триггер
+
+Publish в Azure {#publish}
+===========================
+1. Создадим Publish профайл, нажав на кнопку Publish в контекстном меню проекта
+2. 
