@@ -51,3 +51,6 @@ Client functions are the entry point for creating an instance of a Durable Funct
 Orchestrator functions describe how actions are executed, and the order in which they are run. You write the orchestration logic in code (C# or JavaScript).
 
 Activity functions are the basic units of work in a durable function orchestration. An activity function contains the actual work performed by the tasks being orchestrated.
+
+### AuthorizationLevel enum
+1. https://github.com/MicrosoftDocs/azure-docs/issues/50771
