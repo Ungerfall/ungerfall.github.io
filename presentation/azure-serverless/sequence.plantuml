@@ -20,11 +20,10 @@ note over crawlerFunction
   function
 end note
 
-user -> rouletteFunction: http request with app key
+user -> rouletteFunction: http request
 activate rouletteFunction
 
-rouletteFunction -> rouletteFunction: read key from settings
-rouletteFunction -> crawlerFunction: http request with app key
+rouletteFunction -> crawlerFunction: http request
 crawlerFunction --> rouletteFunction: list of articles
 rouletteFunction -> visitedArticles
 visitedArticles --> rouletteFunction: list of visited articles
