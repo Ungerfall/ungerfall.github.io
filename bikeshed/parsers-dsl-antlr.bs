@@ -5,7 +5,7 @@ Level: 1
 Date: 2021-03-21
 Markup Shorthands: markdown yes
 Status: DREAM
-URL: https://ungerfall.github.io/2020/12/01/techtalk-proposal-parsers-dsl-antlr.html 
+URL: https://ungerfall.github.io/2021/04/21/parsers-dsl-antlr.html 
 
 Editor: Leonid Petrov, EPAM Systems http://www.epam.com/, Leonid_Petrov1@epam.com
 
