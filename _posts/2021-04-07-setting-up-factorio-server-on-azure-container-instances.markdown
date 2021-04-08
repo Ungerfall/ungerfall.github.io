@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setting up a factorio server on azure container instances"
+title:  "Setting up a factorio server on Azure Container Instances"
 ---
 
 Guide to setup server for [Factorio](https://factorio.com/) game.
@@ -19,9 +19,13 @@ storage=stfactorio$RANDOM
 share=sharefactorio
 az storage account create -g $rg -n $storage -l $location --sku Standard_LRS
 az storage share create -n $share --account-name $storage
+```
+3. Save ARM template deploy-factrio-server.json
+Get your storage key executing command
+``` bash
 STORAGE_KEY=$(az storage account keys list --resource-group $rg --account-name $storage --query "[0].value" --output tsv)
 ```
-3. Save ARM template deploy-factrio-server.json (make changes before running)
+Replace values before running
 ``` json
 {
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
@@ -89,8 +93,8 @@ STORAGE_KEY=$(az storage account keys list --resource-group $rg --account-name $
             "name": "filesharevolume",
             "azureFile": {
                 "shareName": "sharefactorio",
-                "storageAccountName": "stfactorio22392",
-                "storageAccountKey": "Eu8+BARJdmiVm+PBiuHh6RV9A9SxgNODyWdgDZ7ivjoAjxs7OigF3oQsxa1GyMLAUX6OfvhO/omanUirs0qblQ=="
+                "storageAccountName": "<storage acccount name>",
+                "storageAccountKey": "<storage account key>"
             }
           }
         ]
