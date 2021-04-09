@@ -129,6 +129,8 @@ az container exec -g $rg -n <container instances name> --container-name <contain
 
 6. Edit factorio/config/server-settings.json (mandatory to set username + password/token)
 
+7. Open the game and connect to [public ip]:34197
+
 ### Links
 1. https://github.com/factoriotools/factorio-docker
 2. https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-cli
