@@ -132,6 +132,6 @@ az container exec -g $rg -n <container instances name> --container-name <contain
 7. Open the game and connect to [public ip]:34197
 
 ### Links
-1. <https://github.com/factoriotools/factorio-docker>
-2. <https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-cli>
-3. <https://docs.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files>
+1. <a href="https://github.com/factoriotools/factorio-docker" />
+2. <a href="https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-use-files-cli" />
+3. <a href="https://docs.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files" />
