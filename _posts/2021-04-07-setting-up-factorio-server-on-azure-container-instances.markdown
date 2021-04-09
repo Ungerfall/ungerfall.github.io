@@ -4,7 +4,7 @@ title:  "Setting up a factorio server on Azure Container Instances"
 ---
 
 Guide to setup server for [Factorio](https://factorio.com/) game.
-Use windows bash to run commands. Important: don't use git bash
+Use [Azure Cload Shell](https://portal.azure.com/#cloudshell/) to run commands.
 
 ### [Azure](https://azure.microsoft.com/en-us/)
 1. Resource group
@@ -32,7 +32,7 @@ Replace values before running
   "contentVersion": "1.0.0.0",
   "variables": {
     "containername": "container-factorio-server",
-    "containerimage": "docker.io/dtandersen/factorio:stable"
+    "containerimage": "docker.io/factoriotools/factorio:stable"
   },
   "resources": [
     {
@@ -67,6 +67,20 @@ Replace values before running
                 {
                   "name": "filesharevolume",
                   "mountPath": "/factorio"
+                }
+              ],
+              "environmentVariables": [
+                {
+                  "name": "LOAD_LATEST_SAVE",
+                  "value": "false"
+                },
+                {
+                  "name": "GENERATE_NEW_SAVE",
+                  "value": "true"
+                },
+                {
+                  "name": "SAVE_NAME",
+                  "value": "generatenewsave"
                 }
               ]
             }
@@ -112,6 +126,8 @@ az deployment group create --resource-group $rg --template-file deploy-factorio-
 ``` bash
 az container exec -g $rg -n <container instances name> --container-name <container name> --exec-command "sh"
 ```
+
+6. Edit factorio/config/server-settings.json (mandatory to set username + password/token)
 
 ### Links
 1. https://github.com/factoriotools/factorio-docker
