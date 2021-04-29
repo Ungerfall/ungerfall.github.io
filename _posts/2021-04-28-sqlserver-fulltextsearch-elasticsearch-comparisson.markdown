@@ -307,9 +307,10 @@ Intel Core i7-6700 CPU 3.40GHz (Skylake), 1 CPU, 8 logical and 4 physical cores
 RunStrategy=ColdStart  
 
 ```
+
 |                           Method |      N |      Mean |     Error |     StdDev |   Median |       Min |         Max |
 |----------------------------------|--------|-----------|-----------|------------|----------|-----------|-------------|
-|            **SqlServerContains_250** |     **10** |  **3.478 ms** |  **1.417 ms** |   **4.178 ms** | **2.921 ms** | **0.6198 ms** |    **42.21 ms** |
+|            SqlServerContains_250 |     10 |  3.478 ms |  1.417 ms |   4.178 ms | 2.921 ms | 0.6198 ms |    42.21 ms |
 |  SqlServerContains_1000_Nullable |     10 |  4.586 ms |  4.874 ms |  14.371 ms | 2.997 ms | 0.7489 ms |   145.99 ms |
 |           SqlServerContains_1000 |     10 |  4.457 ms |  4.529 ms |  13.355 ms | 3.050 ms | 0.7292 ms |   135.75 ms |
 |             SqlServerContains_10 |     10 |  4.260 ms |  3.369 ms |   9.934 ms | 2.784 ms | 0.6755 ms |    79.82 ms |
@@ -317,7 +318,7 @@ RunStrategy=ColdStart
 | ElasticsearchMatch_1000_Nullable |     10 |  5.658 ms | 12.821 ms |  37.803 ms | 1.521 ms | 0.8079 ms |   379.77 ms |
 |          ElasticsearchMatch_1000 |     10 |  5.654 ms | 12.788 ms |  37.706 ms | 1.727 ms | 0.8111 ms |   378.84 ms |
 |            ElasticsearchMatch_10 |     10 |  5.558 ms | 12.979 ms |  38.269 ms | 1.472 ms | 0.8153 ms |   384.33 ms |
-|            **SqlServerContains_250** |   **1000** |  **3.504 ms** |  **1.849 ms** |   **5.451 ms** | **2.954 ms** | **0.5868 ms** |    **55.09 ms** |
+|            SqlServerContains_250 |   1000 |  3.504 ms |  1.849 ms |   5.451 ms | 2.954 ms | 0.5868 ms |    55.09 ms |
 |  SqlServerContains_1000_Nullable |   1000 |  4.404 ms |  4.476 ms |  13.198 ms | 2.906 ms | 0.6928 ms |   134.09 ms |
 |           SqlServerContains_1000 |   1000 |  4.512 ms |  4.470 ms |  13.181 ms | 3.049 ms | 0.7372 ms |   133.83 ms |
 |             SqlServerContains_10 |   1000 |  4.392 ms |  4.409 ms |  13.000 ms | 2.979 ms | 0.7309 ms |   131.97 ms |
@@ -325,7 +326,7 @@ RunStrategy=ColdStart
 | ElasticsearchMatch_1000_Nullable |   1000 |  5.490 ms | 13.140 ms |  38.744 ms | 1.284 ms | 0.8597 ms |   388.97 ms |
 |          ElasticsearchMatch_1000 |   1000 |  5.626 ms | 12.905 ms |  38.049 ms | 1.430 ms | 0.8736 ms |   382.17 ms |
 |            ElasticsearchMatch_10 |   1000 |  5.705 ms | 13.195 ms |  38.905 ms | 1.568 ms | 0.8949 ms |   390.76 ms |
-|            **SqlServerContains_250** | **100000** | **27.463 ms** | **63.280 ms** | **186.581 ms** | **3.391 ms** | **0.8667 ms** | **1,762.45 ms** |
+|            SqlServerContains_250 | 100000 | 27.463 ms | 63.280 ms | 186.581 ms | 3.391 ms | 0.8667 ms | 1,762.45 ms |
 |  SqlServerContains_1000_Nullable | 100000 |  4.567 ms |  4.599 ms |  13.561 ms | 3.036 ms | 0.7599 ms |   137.84 ms |
 |           SqlServerContains_1000 | 100000 |  4.286 ms |  4.715 ms |  13.903 ms | 2.989 ms | 0.7403 ms |   140.98 ms |
 |             SqlServerContains_10 | 100000 |  4.509 ms |  3.300 ms |   9.731 ms | 3.006 ms | 0.7464 ms |    78.98 ms |
