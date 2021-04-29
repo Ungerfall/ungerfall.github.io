@@ -22,7 +22,7 @@ Developer Edition (64-bit) on Windows 10 Enterprise 10.0 <X64> (Build 18362: ) (
 
 # SQL Server setup
 
-### Limit sql server memory
+# Limit sql server memory
 
 ``` sql
 sp_configure 'show advanced options', 1;
@@ -66,7 +66,7 @@ CREATE FULLTEXT INDEX ON dbo.Entities(
 GO
 ```
 
-### Benchmarks
+# Benchmarks
 
 Different character lengths. Columns:
 
@@ -294,7 +294,7 @@ public class EsVsSqlServer
 }
 ```
 
-### Results
+# Results
 
 ``` ini
 
@@ -334,7 +334,7 @@ RunStrategy=ColdStart
 |          ElasticsearchMatch_1000 | 100000 |  5.590 ms | 13.012 ms |  38.365 ms | 1.312 ms | 0.8760 ms |   385.26 ms |
 |            ElasticsearchMatch_10 | 100000 |  5.498 ms | 13.403 ms |  39.519 ms | 1.253 ms | 0.8845 ms |   396.67 ms |
 
-##### Histograms
+# Histograms
 
 ``` ini
 EsVsSqlServer.SqlServerContains_250: Job-JJCSWT(RunStrategy=ColdStart) [N=10]
@@ -1023,7 +1023,7 @@ Skewness = 9.7, Kurtosis = 95.99, MValue = 2.28
 ---------------------------------------------------
 ```
 
-### Links
+# Links
 1. [CREATE FULLTEXT INDEX](https://docs.microsoft.com/en-us/sql/t-sql/statements/create-fulltext-index-transact-sql?view=sql-server-ver15)
 2. [ALTER FULLTEXT INDEX](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-fulltext-index-transact-sql?view=sql-server-ver15)
 3. <https://benchmarkdotnet.org/>
