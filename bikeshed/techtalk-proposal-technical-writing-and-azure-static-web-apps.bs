@@ -1,0 +1,64 @@
+<pre class='metadata'>
+Title: Technical writing и Azure Static Web Apps - techtalk proposal
+Shortname: techwriting and azure static web apps
+Level: 1
+Date: 2021-06-27
+Markup Shorthands: markdown yes
+Status: DREAM
+URL: https://ungerfall.github.io/2021/06/27/technical-writing-and-azure-static-web-apps.html 
+
+Editor: Leonid Petrov, EPAM Systems http://www.epam.com/, Leonid_Petrov1@epam.com
+
+Abstract: Документ содержит предложение проведения технического доклада на тему "Technical writing и Azure Static Web Apps"
+
+</pre>
+
+Вступление {#intro}
+=====================
+Every engineer is also a writer.<br/>
+Рассмотрим недавно открывшиеся курсы [Technical Writing](https://developers.google.com/tech-writing) от Google<br/>
+[Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/overview) - сервис, автоматически строящий и разварачиващий web приложения из исходного кода.<br/>
+Расмотрим основные возможности и продемонстрируем работу связки Github Pages + Jekyll + serverless Azure Functions
+
+Мотивация {#motivation}
+========================
+Призвать коллег к написанию технической документации или технического блога.<br/>
+На текущий момент в Comminity Z нет ни одного доклада по ключевым словам Azure Static Web Apps, Github Pages, Technical Writing
+
+Кому будет интересна тема {#audience}
+======================================
+Всем разработчикам.
+
+Состав доклада {#agenda}
+=========================
+Будет состоять из 3 частей общей длительностью 45 минут
+
+Tech writing от Google. 15 минут {#agenda-techwriting}
+-------------------------------------
+Покажу состав курса от Google на слайдах и сам курс в браузере.
+
+Azure Static Web Apps 15 минут {#agenda-azurestaticwebapps}
+------------------------------------
+В этой части рассмотрим сервис, фичи, стоимость.
+
+Демо. Github Pages and Azure Static Web Apps. 15 минут {#agenda-demo}
+------------------------------------------
+Создадим страницу Github Pages с помощью генератора Jekyll. Опубликуем в Azure Static Web Apps и
+покажу пример работы вместе с Azure Functions.
+
+Q&A. {#agenda-qa}
+--------------------------
+Q&A сессия.
+
+Что осталось сделать {#whats-left}
+===================================
+1. Презентация
+
+Когда {#when}
+==============
+14 июля. Или любой другой день этой недели
+
+Предложения {#suggestions}
+==========================
+Открыт к предложениям к улучшению.
+
