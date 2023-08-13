@@ -3,4 +3,14 @@ layout: post
 title:  "DRAFT: Chess viewer on Scratch"
 ---
 
+During the last three months I was participating in the e-kids program at my job. 
+The event was dedicated to teach 9-11 years old kids to code on [Scratch](https://scratch.mit.edu/).
+I was touching the Scratch for the first time and wanted to create some interesting thing which would
+include most of the Scrach blocks. 
+
+### The project
+
+The main goal was to create a project that is time-bound so I could demo it at the end of the program.
+The first idea was the chess game, but it failed on estimation - it would take more time, because of interactions I should made. 
+
 ### Links
