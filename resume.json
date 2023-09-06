@@ -1,0 +1,180 @@
+{
+  "basics": {
+    "name": "Leonid Petrov",
+    "label": ".NET Software engineer",
+    "image": "https://media.licdn.com/dms/image/C5603AQFhlYUgg7PK8w/profile-displayphoto-shrink_800_800/0/1601146919329?e=1698883200&v=beta&t=nexbjuAq2MQ0UkNJz-nj6fNGy8ji13LO838t7eGAM-8",
+    "email": "ungerfall@gmail.com",
+    "url": "https://ungerfall.github.io/",
+    "summary": "Software Engineer with over 6 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.",
+    "location": {
+      "city": "Antalya",
+      "countryCode": "TR"
+    },
+    "profiles": [{
+      "network": "LinkedIn",
+      "username": "leonid-petrov-803808195",
+      "url": "https://www.linkedin.com/in/leonid-petrov-803808195/"
+    },
+    {
+      "network": "GitHub",
+      "username": "Ungerfall",
+      "url": "https://github.com/Ungerfall"
+    }]
+  },
+  "work": [{
+    "name": "EPAM Systems",
+    "position": "Senior software engineer",
+    "url": "https://epam.com",
+    "startDate": "2022-06-01",
+    "summary": "Data transfer system of an alternative investment platform"
+  },
+  {
+    "name": "EPAM Systems",
+    "position": "Build engineer",
+    "url": "https://epam.com",
+    "startDate": "2023-06-01",
+    "endDate": "2023-10-01",
+    "summary": "New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research"
+  },
+  {
+    "name": "EPAM Systems",
+    "position": "Senior software engineer",
+    "url": "https://epam.com",
+    "startDate": "2022-01-01",
+    "endDate": "2022-06-01",
+    "summary": "New cloud native educational platform to integrate internal and external systems"
+  },
+  {
+    "name": "EPAM Systems",
+    "position": "Software engineer",
+    "url": "https://epam.com",
+    "startDate": "2021-01-01",
+    "endDate": "2022-01-01",
+    "summary": "Brand new system to automate loan usage monitoring"
+  },
+  {
+    "name": "EPAM Systems",
+    "position": "Software engineer",
+    "url": "https://epam.com",
+    "startDate": "2017-12-01",
+    "endDate": "2021-01-01",
+    "summary": "Securities operations back office system"
+  },
+  {
+    "name": "EPAM Systems",
+    "position": "Junior software engineer",
+    "url": "https://epam.com",
+    "startDate": "2016-09-01",
+    "endDate": "2017-12-01",
+    "summary": "Request and storage of credit score information in a banking system"
+  }],
+  "volunteer": [{
+    "organization": "EPAM eKids",
+    "position": "Teacher",
+    "url": "https://careers.epam.hu/education/ekids",
+    "startDate": "2022-08-01",
+    "endDate": "2023-05-15",
+    "summary": "The Introduction to Programming with Scratch, a block-based visual programming language developed by the MIT Media Lab, this course aims to cultivate logical reasoning, problem-solving skills, and an understanding of computational thinking.",
+    "highlights": [
+      "Awarded 'EPAM eKids Guru'",
+      "Developed chess game viewer in Scratch https://github.com/Ungerfall/learning-scratch/tree/main/chess"
+    ]
+  }],
+  "education": [{
+    "institution": "Kalashnikov Izhevsk State Technical University",
+    "url": "http://inter.istu.ru/",
+    "area": "Software Engineering",
+    "studyType": "Bachelor",
+    "startDate": "2011-09-01",
+    "endDate": "2015-07-31"
+  }],
+  "certificates": [{
+    "name": "Microsoft Certified: Azure Developer Associate",
+    "date": "2020-07-08",
+    "issuer": "Microsoft",
+    "url": "https://www.credly.com/badges/1e5a6b0e-3ce5-4196-9a4e-f74e441859d7/public_url"
+  },
+  {
+    "name": "MCSA: SQL 2016 Database Development",
+    "date": "2021-01-28",
+    "issuer": "Microsoft",
+    "url": "https://www.credly.com/badges/dad925d0-b9e4-495f-b4b1-7f7d70280be6/public_url"
+  },
+  {
+    "name": "AWS Certified Developer – Associate",
+    "date": "2021-11-29",
+    "issuer": "Amazon Web Services Training and Certification",
+    "url": "https://www.credly.com/badges/2f8a1141-3319-415a-92f3-5860745dbaff/public_url"
+  },
+  {
+    "name": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+    "date": "2022-07-28",
+    "issuer": "Microsoft",
+    "url": "https://www.credly.com/badges/5960472b-86dc-451e-855b-dc665ef31cb3/public_url"
+  },
+  {
+    "name": "Microsoft Certified: Azure Cosmos DB Developer Specialty",
+    "date": "2022-07-28",
+    "issuer": "Microsoft",
+    "url": "https://www.credly.com/badges/5960472b-86dc-451e-855b-dc665ef31cb3/public_url"
+  },
+  {
+    "name": "Associate Cloud Engineer",
+    "date": "2023-06-29",
+    "issuer": "Google Cloud",
+    "url": "https://www.credential.net/b9977b43-4333-4c6e-9a2d-30b519519800?key=94d3c8946cdb78aec496d97c34c1a6dde976cf0747c9b45ed67eff2a5d112eeb"
+  }],
+  "skills": [{
+    "name": "Back-end",
+    "level": "Advanced",
+    "keywords": [
+      ".NET",
+      "C#",
+      "MSSQL",
+      "ASP.NET Core",
+      "Azure",
+      "Azure Cosmos DB"
+    ]
+  },
+  {
+    "name": "DevOps",
+    "level": "Novice",
+    "keywords": [
+      "Azure",
+      "GCP",
+      "AWS",
+      "GitLab"
+    ]
+  },
+  {
+    "name": "Front-end",
+    "level": "Novice",
+    "keywords": [
+      "React JS",
+      "TypeScript"
+    ]
+  },
+  {
+    "name": "Leadership & Soft Skills",
+    "level": "Advanced",
+    "keywords": [
+      "Developing Others",
+      "Mentoring",
+      "Giving Feedback"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "B2"
+  },
+  {
+    "language": "Russian",
+    "fluency": "Native"
+  }],
+  "interests": [{
+    "name": "Chess"
+  },
+  {
+    "name": "Bicycle"
+  }]
+}
