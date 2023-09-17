@@ -5,7 +5,7 @@
     "image": "https://media.licdn.com/dms/image/C5603AQFhlYUgg7PK8w/profile-displayphoto-shrink_800_800/0/1601146919329?e=1698883200&v=beta&t=nexbjuAq2MQ0UkNJz-nj6fNGy8ji13LO838t7eGAM-8",
     "email": "ungerfall@gmail.com",
     "url": "https://ungerfall.github.io/",
-    "summary": "Software Engineer with over 6 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.",
+    "summary": "Software Engineer with over 7 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.",
     "location": {
       "city": "Antalya",
       "countryCode": "TR"
@@ -26,7 +26,13 @@
     "position": "Senior software engineer",
     "url": "https://epam.com",
     "startDate": "2022-06-01",
-    "summary": "Data transfer system of an alternative investment platform"
+    "summary": "Data transfer system of an alternative investment platform",
+    "highlights": [
+      "Fixed and improved integration tests during project onboarding",
+      "Helped to onboard two developers",
+      "Improved observability of the data transfer system using observable monitoring and notifications",
+      "Migrated net48 and netcore3.1 to net6.0 target framework"
+    ]
   },
   {
     "name": "EPAM Systems",
@@ -34,7 +40,7 @@
     "url": "https://epam.com",
     "startDate": "2023-06-01",
     "endDate": "2023-10-01",
-    "summary": "New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research"
+    "summary": "New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research which started as an AI hackathon project"
   },
   {
     "name": "EPAM Systems",
@@ -42,7 +48,13 @@
     "url": "https://epam.com",
     "startDate": "2022-01-01",
     "endDate": "2022-06-01",
-    "summary": "New cloud native educational platform to integrate internal and external systems"
+    "summary": "A key developer for a new cloud native educational platform to integrate internal and external systems",
+    "highlights": [
+      "Azure (Cosmos DB, Functions, Logic Apps), .net 6, ReactJS",
+      "Developed and designed React application",
+      "Developed and designed ASP.NET Core WebApi",
+      "Developed data access layer for CosmosDB"
+    ]
   },
   {
     "name": "EPAM Systems",
@@ -50,7 +62,13 @@
     "url": "https://epam.com",
     "startDate": "2021-01-01",
     "endDate": "2022-01-01",
-    "summary": "Brand new system to automate loan usage monitoring"
+    "summary": "New system to automate loan usage monitoring",
+    "highlights": [
+      "ASP.NET Core, EF Core, MassTransit, OData, SignalR",
+      "Designed database structure for the main business processes (Funds transfer, Credit products repayment)",
+      "Developed several HTTP services using ASP.NET Core with OData support for filtering and pagination",
+      "Developed Notification Hub Web API using SignalR"
+    ]
   },
   {
     "name": "EPAM Systems",
@@ -58,7 +76,14 @@
     "url": "https://epam.com",
     "startDate": "2017-12-01",
     "endDate": "2021-01-01",
-    "summary": "Securities operations back office system"
+    "summary": "A large and complex securities operations back-office system",
+    "highlights": [
+      "MSSQL, .NET Framework, RDLC reports",
+      "Enhanced personal income taxes calculation system with new business rules, law amendments",
+      "Maintained integration service",
+      "Developed RDLC and XSLT reports",
+      "Optimized SQL stored procedures"
+    ]
   },
   {
     "name": "EPAM Systems",
@@ -66,7 +91,13 @@
     "url": "https://epam.com",
     "startDate": "2016-09-01",
     "endDate": "2017-12-01",
-    "summary": "Request and storage of credit score information in a banking system"
+    "summary": "Request and storage of credit score information in a banking system",
+    "highlights": [
+      ".NET Framework, MSSQL, WCF",
+      "Developed an adapter for a 3rd-party API",
+      "Developed WCF service contracts",
+      "Maintained stored procedures and unit tests"
+    ]
   }],
   "volunteer": [{
     "organization": "EPAM eKids",
@@ -123,6 +154,18 @@
     "date": "2023-06-29",
     "issuer": "Google Cloud",
     "url": "https://www.credential.net/b9977b43-4333-4c6e-9a2d-30b519519800?key=94d3c8946cdb78aec496d97c34c1a6dde976cf0747c9b45ed67eff2a5d112eeb"
+  }],
+  "references": [{
+    "name": "Thiago Fernandes Custodio, Solution Architect, EPAM Systems",
+    "reference": "Leonid joint the project and quickly learned the technology stack we were using. During his participation he always came with great quality code, fully tested and even provided feedback about the requirements and possible issues. He was on a different timezone, but he managed to stay after his working hours to overlay customers timezone and provide support when needed. He is a nice person and a great team member which always provided good feedback on peer's code and helped onboarding new team members."
+  },
+  {
+    "name": "Aibulat Akhmentov, Team Lead, EPAM Systems",
+    "reference": "Throughout the work on the project I was repeatedly convinced that Leonid has a well-developed problem-solving skill. He perfectly understood the root cause of a problem and could effectively solve it. Moreover, the solutions were not some kind of crutches. In one case, the proposed and implemented solution was highly versatile that we started used it in different application modules. Ultimately, this allowed us to reduce amount of code and improve maintainability."
+  },
+  {
+    "name": "Alexandr Usynin, Resource Manager, EPAM Systems",
+    "reference": "Leonid is a competent full stack developer. With deep knowledge in databases and clouds (AZURE and AWS). This is confirmed by excellent feedbacks from projects and certificates. In addition to project activities, ру proved himself as a L&D mentor (22 times, 5 different mentoring programs) and community speaker (5 times), participated in project interviews as an interviewer."
   }],
   "skills": [{
     "name": "Back-end",
