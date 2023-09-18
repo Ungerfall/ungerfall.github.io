@@ -1,745 +1,426 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume of Leonid Petrov</title>
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
-    <style type="text/css">
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-@charset "utf-8";
-@-webkit-viewport   { width: device-width; }
-@-moz-viewport      { width: device-width; }
-@-ms-viewport       { width: device-width; }
-@-o-viewport        { width: device-width; }
-@viewport           { width: device-width; }
-
-body{
-  font-family: 'Open Sans', Arial, Tahoma;
-  font-weight: 400;
-  color: #363636;
-  background: #334960;
-}
-blockquote {
-  font-size: 1em;
-}
-
-.container{
-  margin-top: 80px;
-  margin-bottom: 15px;
-  background: #fff;
-}
-
-#photo-header{
-  margin-top: -75px;
-}
-#photo{
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  overflow: hidden;
-  padding: 5px;
-  background: #334960;
-  display: inline-block;
-}
-#photo img{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-#text-header h1{
-  margin: 0;
-  padding: 0;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-}
-#text-header h1::first-line{
-  font-size: 1.5em;
-  font-weight: 800;
-  line-height: 1.5em;
-}
-#text-header h1 span{
-  color: #334960;
-  opacity: 0.7;
-}
-#text-header h1 sup{
-  opacity: 0.5;
-}
-#text-header:after{
-  width: 100%;
-  height: 3px;
-  border-bottom: 1px solid #ddd;
-  margin-top: 15px;
-  content: '';
-  display: block;
-}
-
-.box{
-  padding-bottom: 10px;
-  margin-bottom: 25px;
-}
-.box h2{
-  color: #227c74;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-#awards,
-#education{
-  margin-top: 20px;
-  margin-bottom: 0;
-  position: relative;
-  padding: 1em 0;
-  list-style: none;
-}
-#awards:before,
-#education:before {
-  width: 5px;
-  height: 100%;
-  position: absolute;
-  left: 35px;
-  top: 0;
-  content: ' ';
-  display: block;
-  background: #32475c;
-  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
-  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-}
-#awards li,
-#education li{
-  width: 100%;
-  z-index: 2;
-  position: relative;
-  float: left;
-}
-#awards .year,
-#education .year{
-  width: 14%;
-  background: #fff;
-  padding: 10px;
-  font-weight: 700;
-  display: inline-block;
-}
-#awards .description,
-#education .description{
-  width: 83%;
-  display: inline-block;
-  background: #eee;
-  margin-bottom: 10px;
-  position: relative;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-#awards .description:after,
-#education .description:after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  right: 0;
-  left: -16px;
-  height: 0;
-  width: 0;
-  border: solid transparent;
-  border-right-color: #eee;
-  border-width: 8px;
-  pointer-events: none;
-}
-#awards .description h3,
-#education .description h3{
-  font-size: 1.2em;
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-}
-#awards .description p,
-#education .description p{
-  margin-top: 5px;
-  padding: 0;
-}
-
-.job{
-  margin-bottom: 15px;
-}
-.job .details {
-  margin-left: 3%;
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 10px;
-  background: #eee;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-.job .where{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.job .year{
-  opacity: 0.7;
-}
-.job .profession{
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.job .description{
-  line-height: 1.5em;
-}
-.job .highlights{
-  padding: 5px 0;
-  font-weight: bold;
-}
-.job .job-details {
-  padding-left: 5%;
-  width: 100%;
-}
-.publication {
-  margin-bottom: 0;
-}
-.publication .name{
-  font-size: 1em;
-  font-weight: bold;
-}
-.publication .year{
-    opacity: 0.7;
-}
-.publication p{
-  margin: 0;
-  padding-top: 10px;
-}
-
-.contact-item{
-  width: 100%;
-  float: left;
-}
-.contact-item .icon{
-  padding: 10px;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  color: #32475c;
-  background: #eee;
-}
-.contact-item:last-child .icon{
-  border-bottom: none;
-}
-.contact-item .title{
-  width: 80%;
-  width: calc(100% - 55px);
-  font-weight: 700;
-  opacity: 0.9;
-}
-.contact-item .title.only{
-  margin-top: 10px;
-}
-.contact-item .description{
-  width: 80%;
-  width: calc(100% - 55px);
-  color: #334960;
-}
-
-.item-interests,
-.item-skills{
-  height: 30px;
-  color: #334960;
-  padding: 5px 10px;
-  margin-bottom: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 1.1em;
-  font-weight: 600;
-}
-.interest,
-.skill{
-  color: #fff;
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  padding: 5px 10px;
-  background: #32475c;
-  position: relative;
-  font-size: .85em;
-}
-.skill-level {
-  background-color: #227c74;
-  border-radius: 4px;
-  color: #fff;
-  padding: 1px 8px;
-  font-size: .75em;
-  position: absolute;
-  margin: 1px 10px;
-}
-
-#language-skills .skill{
-  margin: 10px 0;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-    </style>
-    <style type="text/css" media="print">
-    body {
-  font-size: .95em;
-  -webkit-print-color-adjust: exact;
-}
-
-a[href]:after {
-  content: none !important;
-}
-
-#photo{
-  display: none;
-}
-
-.box {
-  margin-bottom: -10px;
-}
-
-blockquote,
-#education,
-#awards,
-.contact-item,
-.publication,
-.skills,
-.interests {
-  page-break-inside: avoid;
-}
-
-.col-sm-5{
-  width: 40%;
-  padding: 0 15px;
-}
-
-.col-sm-7{
-  width: 60%;
-  padding: 0 15px;
-}
-
-.skills .col-sm-offset-1,
-.interests .col-sm-offset-1{
-  margin-top: -10px;
-  margin-bottom: 5px;
-}
-
-#education {
-  margin: 0;
-  margin-bottom: -20px;
-}
-#awards:before,
-#education:before {
-  background: none;
-}
-
-#awards .description,
-#education .description,
-.job .details {
-  border: 1px solid #eee;
-}
-.publication,
-.publication .panel-heading,
-.publication .name{
-  margin: 0;
-  padding: 0 5px;
-  border: none;
-}
-.publication .panel-body {
-  padding: 0 10px;
-  margin: 0;
-}
-
-.badge {
-  margin: 0;
-}
-
-.list-group-item{
-  border: none;
-  margin: 0;
-  padding: 5px 15px;
-}
-.list-group-item:after{
-  content: '';
-  position: absolute;
-  top: 8px;
-  right: 0;
-  left: -1px;
-  height: 0;
-  width: 0;
-  border: solid transparent;
-  border-right-color: #999;
-  border-width: 4px;
-  pointer-events: none;
- }
-
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div id="photo-header" class="text-center">
-            <!-- PHOTO (AVATAR) -->
-            <div id="photo">
-              <img src="https:&#x2F;&#x2F;media.licdn.com&#x2F;dms&#x2F;image&#x2F;C5603AQFhlYUgg7PK8w&#x2F;profile-displayphoto-shrink_800_800&#x2F;0&#x2F;1601146919329?e&#x3D;1698883200&amp;v&#x3D;beta&amp;t&#x3D;nexbjuAq2MQ0UkNJz-nj6fNGy8ji13LO838t7eGAM-8" alt="avatar">
-            </div>
-            <div id="text-header" >
-              <h1>Leonid Petrov<br><span>.NET Software engineer</span></h1>
-            </div>
-          </div>
-        </div>
+    <html lang="en" style="">
+      <head>
+        <meta charset="utf-8">
+        
+    <title>Leonid Petrov</title>
+    <meta name="description" content="Software Engineer with over 7 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.">
+  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+        <style>:root{color-scheme:light dark;--color-background-light: #ffffff;--color-dimmed-light: #f3f4f5;--color-primary-light: #191e23;--color-secondary-light: #6c7781;--color-accent-light: #0073aa;--color-background-dark: #191e23;--color-dimmed-dark: #23282d;--color-primary-dark: #fbfbfc;--color-secondary-dark: #ccd0d4;--color-accent-dark: #00a0d2;--color-background: var(--color-background-light);--color-dimmed: var(--color-dimmed-light);--color-primary: var(--color-primary-light);--color-secondary: var(--color-secondary-light);--color-accent: var(--color-accent-light);--scale-ratio: 1.25;--scale0: 1rem;--scale1: calc(var(--scale0) * var(--scale-ratio));--scale2: calc(var(--scale1) * var(--scale-ratio));--scale3: calc(var(--scale2) * var(--scale-ratio));--scale4: calc(var(--scale3) * var(--scale-ratio));--scale5: calc(var(--scale4) * var(--scale-ratio))}@media (prefers-color-scheme: dark){:root{--color-background: var(--color-background-dark);--color-dimmed: var(--color-dimmed-dark);--color-primary: var(--color-primary-dark);--color-secondary: var(--color-secondary-dark);--color-accent: var(--color-accent-dark)}}*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px}body{background:var(--color-background);color:var(--color-primary);display:grid;font:1em/1.5 Lato,sans-serif;gap:2em;grid-template-columns:[full-start] 1fr [main-start side-start] minmax(min-content,12em) [side-end content-start] minmax(min-content,36em) [main-end content-end] 1fr [full-end];grid-template-rows:auto [content] 0;margin-bottom:4em}body:before{content:"";grid-column:full;grid-row:content}ol,ul{padding-left:1em}:not(.icon-list,.tag-list)>li+li{margin-top:.4em}li::marker,.network{color:var(--color-secondary)}a{color:var(--color-accent);text-decoration:none}a:focus,a:hover{text-decoration:underline}h1,h2,h3,h5{font-weight:400}h1,h2,h3{line-height:1.2}h1{font-size:var(--scale5)}h2{color:var(--color-secondary);font-size:var(--scale4)}h3{color:var(--color-secondary);font-size:var(--scale3);grid-column:side;margin-bottom:1rem}h4{font-size:var(--scale2)}h5{font-size:var(--scale1)}h6{font-size:var(--scale0)}blockquote{border-left:.2em solid var(--color-dimmed);padding-left:1em}cite{color:var(--color-secondary);font-style:inherit}cite:before{content:"— "}svg{margin-right:.2em;vertical-align:text-bottom}.masthead{background:var(--color-dimmed);display:inherit;gap:inherit;grid-column:full;grid-template-columns:inherit;padding:4em 0;text-align:center}.masthead>*,section{grid-column:main}.masthead>img{border:4px solid;border-radius:50%;margin:0 auto;max-width:12em}article>*+*,blockquote>*+*,.timeline>div>*+*{margin-top:.6em}.meta{color:var(--color-secondary)}.stack{display:grid;gap:1.5em}.icon-list{display:flex;flex-wrap:wrap;gap:.4em 1em;justify-content:center;list-style:none;padding:0}.grid-list{display:grid;gap:1em}.tag-list{display:flex;flex-wrap:wrap;gap:.4em;list-style:none;padding:0}.tag-list>li{background:var(--color-dimmed);border-radius:.2em;padding:.2em .6em}.timeline>div{position:relative}.timeline>div:not(:last-child){padding-bottom:1rem}.timeline>div:not(:last-child):before{content:"";position:absolute;top:1rem;left:-15px;width:2px;height:100%;background:var(--color-secondary)}.timeline>div:not(:only-child):after{content:"";position:absolute;top:.6rem;left:-20px;width:8px;height:8px;background:var(--color-secondary);border:2px solid var(--color-background);border-radius:50%}@media print,(min-width: 48em){h3{text-align:right;margin-bottom:inherit}.masthead{text-align:inherit}.masthead>*,section{grid-column:content}.masthead img{grid-column:side;grid-row:span 2;max-width:100%}section{display:contents}.icon-list{flex-direction:column}.grid-list{grid-template-columns:repeat(auto-fit,minmax(calc((100% - 1em)/2),1fr))}}
+</style>
+      </head>
+      <body>
+        
+    <header class="masthead">
+      <img src="https://media.licdn.com/dms/image/C5603AQFhlYUgg7PK8w/profile-displayphoto-shrink_800_800/0/1601146919329?e=1698883200&v=beta&t=nexbjuAq2MQ0UkNJz-nj6fNGy8ji13LO838t7eGAM-8" alt="">
+      <div>
+        <h1>Leonid Petrov</h1>
+        <h2>.NET Software engineer</h2>
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-7">
-          <!-- ABOUT ME -->
-          <div class="box">
-            <h2><i class="fas fa-user ico"></i> About</h2>
-            <p>Software Engineer with over 6 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.</p>
-          </div>
-          <!-- WORK EXPERIENCE -->
-          <div class="box">
-            <h2><i class= "fas fa-suitcase ico"></i> Work Experience</h2>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">
-                      EPAM Systems
-                    </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;epam.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;epam.com</a>
-                    </div>
-                    <div class="year">June 2022 – Present</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="job-details col-xs-11">
-                    <div class="profession">Senior software engineer</div>
-                    <div class="description">
-                      Data transfer system of an alternative investment platform
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">Fixed and improved integration tests during project onboarding</li>
-                        <li class="list-group-item">Helped to onboard two developers</li>
-                        <li class="list-group-item">Improved observability of the data transfer system using observable monitoring and notifications</li>
-                        <li class="list-group-item">Migrated net48 and netcore3.1 to net6.0 target framework</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+      <article><p>Software Engineer with over 7 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.</p></article>
+      <ul class="icon-list">
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Antalya, Türkiye
+          </li>
+        
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:ungerfall@gmail.com">ungerfall@gmail.com</a>
+          </li>
+        
+        
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            <a href="https://ungerfall.github.io/">ungerfall.github.io</a>
+          </li>
+        
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <a href="https://www.linkedin.com/in/leonid-petrov-803808195/">leonid-petrov-803808195</a>
+            <span class="network">(LinkedIn)</span>
+          </li>
+        
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <a href="https://github.com/Ungerfall">Ungerfall</a>
+            <span class="network">(GitHub)</span>
+          </li>
+        
+      </ul>
+    </header>
+  
+        
+    <section id="work">
+      <h3>Work</h3>
+      <div class="stack">
+        
+          <article>
+            <header>
+              <h4><a href="https://epam.com">EPAM Systems</a></h4>
+              <div class="meta">
+                
               </div>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">
-                      EPAM Systems
-                    </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;epam.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;epam.com</a>
-                    </div>
-                    <div class="year">June 2023 – October 2023</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="job-details col-xs-11">
-                    <div class="profession">Build engineer</div>
-                    <div class="description">
-                      New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research which started as an AI hackathon project
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">
-                      EPAM Systems
-                    </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;epam.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;epam.com</a>
-                    </div>
-                    <div class="year">January 2022 – June 2022</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="job-details col-xs-11">
-                    <div class="profession">Senior software engineer</div>
-                    <div class="description">
-                      A key developer for a new cloud native educational platform to integrate internal and external systems
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">Azure (Cosmos DB, Functions, Logic Apps), .net 6, ReactJS</li>
-                        <li class="list-group-item">Developed and designed React application</li>
-                        <li class="list-group-item">Developed and designed ASP.NET Core WebApi</li>
-                        <li class="list-group-item">Developed data access layer for CosmosDB</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">
-                      EPAM Systems
-                    </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;epam.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;epam.com</a>
-                    </div>
-                    <div class="year">January 2021 – January 2022</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="job-details col-xs-11">
-                    <div class="profession">Software engineer</div>
-                    <div class="description">
-                      New system to automate loan usage monitoring
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">ASP.NET Core, EF Core, MassTransit, OData, SignalR</li>
-                        <li class="list-group-item">Designed database structure for the main business processes (Funds transfer, Credit products repayment)</li>
-                        <li class="list-group-item">Developed several HTTP services using ASP.NET Core with OData support for filtering and pagination</li>
-                        <li class="list-group-item">Developed Notification Hub Web API using SignalR</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">
-                      EPAM Systems
-                    </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;epam.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;epam.com</a>
-                    </div>
-                    <div class="year">December 2017 – January 2021</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="job-details col-xs-11">
-                    <div class="profession">Software engineer</div>
-                    <div class="description">
-                      A large and complex securities operations back-office system
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">MSSQL, .NET Framework, RDLC reports</li>
-                        <li class="list-group-item">Enhanced personal income taxes calculation system with new business rules, law amendments</li>
-                        <li class="list-group-item">Maintained integration service</li>
-                        <li class="list-group-item">Developed RDLC and XSLT reports</li>
-                        <li class="list-group-item">Optimized SQL stored procedures</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">
-                      EPAM Systems
-                    </div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;epam.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;epam.com</a>
-                    </div>
-                    <div class="year">September 2016 – December 2017</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="job-details col-xs-11">
-                    <div class="profession">Junior software engineer</div>
-                    <div class="description">
-                      Request and storage of credit score information in a banking system
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">.NET Framework, MSSQL, WCF</li>
-                        <li class="list-group-item">Developed an adapter for a 3rd-party API</li>
-                        <li class="list-group-item">Developed WCF service contracts</li>
-                        <li class="list-group-item">Maintained stored procedures and unit tests</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <!-- VOLUNTEER -->
-          <div class="box">
-            <h2><i class= "fas fa-users ico"></i> Volunteer</h2>
-              <div class="job clearfix">
-                <div class="row">
-                  <div class="details">
-                    <div class="where">EPAM eKids</div>
-                    <div class="address">
-                      <a href="https:&#x2F;&#x2F;careers.epam.hu&#x2F;education&#x2F;ekids" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;careers.epam.hu&#x2F;education&#x2F;ekids</a>
-                    </div>
-                    <div class="year">August 2022 – May 2023</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="job-details col-xs-11">
-                    <div class="profession">Teacher</div>
-                    <div class="description">
-                      The Introduction to Programming with Scratch, a block-based visual programming language developed by the MIT Media Lab, this course aims to cultivate logical reasoning, problem-solving skills, and an understanding of computational thinking.
-                      <div class="highlights">Highlights</div>
-                      <ul class="list-group">
-                        <li class="list-group-item">Awarded 'EPAM eKids Guru'</li>
-                        <li class="list-group-item">Developed chess game viewer in Scratch https://github.com/Ungerfall/learning-scratch/tree/main/chess</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-5">
-          <!-- CONTACT -->
-          <div class="box clearfix">
-            <h2><i class="fas fa-bullseye ico"></i> Contact</h2>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fas fa-map-marker fa-fw"></span></div>
+            </header>
+            <div class="timeline">
               
-              <div class="title only  pull-right">Antalya TR</div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fas fa-envelope fa-fw"></span></div>
-              <div class="title only pull-right"><a href="mailto:ungerfall@gmail.com" target="_blank">ungerfall@gmail.com</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fas fa-globe fa-fw"></span></div>
-              <div class="title only pull-right"><a href="https:&#x2F;&#x2F;ungerfall.github.io&#x2F;" target="_blank">https:&#x2F;&#x2F;ungerfall.github.io&#x2F;</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
-              <div class="title pull-right">LinkedIn</div>
-              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;leonid-petrov-803808195&#x2F;" target="_blank">leonid-petrov-803808195</a></div>
-            </div>
-            <div class="contact-item">
-              <div class="icon pull-left text-center"><span class="fab fa-github fa-fw"></span></div>
-              <div class="title pull-right">GitHub</div>
-              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;Ungerfall" target="_blank">Ungerfall</a></div>
-            </div>
-          </div>
-          <!-- EDUCATION -->
-          <div class="box">
-            <h2><i class="fas fa-university ico"></i> Education</h2>
-            <ul id="education" class="clearfix">
-              <li>
-                <div class="year pull-left">2011 2015</div>
-                <div class="description pull-right">
-                  <h3>Kalashnikov Izhevsk State Technical University</h3>
-                  <div class="where"></div>
-                  <div class="address">
-                    <a href="http:&#x2F;&#x2F;inter.istu.ru&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> http:&#x2F;&#x2F;inter.istu.ru&#x2F;</a>
+                <div>
+                  <div>
+                    <h5>Senior software engineer</h5>
+                    <div class="meta">
+                      <div><time datetime="2022-06-01">Jun 2022</time> – Present</div>
+                      
+                    </div>
                   </div>
-                  <p><i class= "fas fa-graduation-cap ico"></i> Bachelor</p>
-                  <p>Software Engineering</p>
+                  <p>Data transfer system of an alternative investment platform</p>
+                  
+                    <ul>
+                      <li><p>Fixed and improved integration tests during project onboarding</p></li><li><p>Helped to onboard two developers</p></li><li><p>Improved observability of the data transfer system using observable monitoring and notifications</p></li><li><p>Migrated net48 and netcore3.1 to net6.0 target framework</p></li>
+                    </ul>
+                  
                 </div>
-              </li>
-            </ul>
-          </div>
-          <!-- SKILLS -->
-          <div class="box">
-            <h2><i class="fas fa-tasks ico"></i> Skills</h2>
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  Back-end
-                  <span class="skill-level">Advanced</span>
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">.NET</span>
-                <span class= "skill badge">C#</span>
-                <span class= "skill badge">MSSQL</span>
-                <span class= "skill badge">ASP.NET Core</span>
-                <span class= "skill badge">Azure</span>
-                <span class= "skill badge">Azure Cosmos DB</span>
-              </div>
+              
+                <div>
+                  <div>
+                    <h5>Build engineer</h5>
+                    <div class="meta">
+                      <div><time datetime="2023-06-01">Jun 2023</time> – <time datetime="2023-10-01">Oct 2023</time></div>
+                      
+                    </div>
+                  </div>
+                  <p>New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research which started as an AI hackathon project</p>
+                  
+                </div>
+              
+                <div>
+                  <div>
+                    <h5>Senior software engineer</h5>
+                    <div class="meta">
+                      <div><time datetime="2022-01-01">Jan 2022</time> – <time datetime="2022-06-01">Jun 2022</time></div>
+                      
+                    </div>
+                  </div>
+                  <p>A key developer for a new cloud native educational platform to integrate internal and external systems</p>
+                  
+                    <ul>
+                      <li><p>Azure (Cosmos DB, Functions, Logic Apps), .net 6, ReactJS</p></li><li><p>Developed and designed React application</p></li><li><p>Developed and designed ASP.NET Core WebApi</p></li><li><p>Developed data access layer for CosmosDB</p></li>
+                    </ul>
+                  
+                </div>
+              
+                <div>
+                  <div>
+                    <h5>Software engineer</h5>
+                    <div class="meta">
+                      <div><time datetime="2021-01-01">Jan 2021</time> – <time datetime="2022-01-01">Jan 2022</time></div>
+                      
+                    </div>
+                  </div>
+                  <p>New system to automate loan usage monitoring</p>
+                  
+                    <ul>
+                      <li><p>ASP.NET Core, EF Core, MassTransit, OData, SignalR</p></li><li><p>Designed database structure for the main business processes (Funds transfer, Credit products repayment)</p></li><li><p>Developed several HTTP services using ASP.NET Core with OData support for filtering and pagination</p></li><li><p>Developed Notification Hub Web API using SignalR</p></li>
+                    </ul>
+                  
+                </div>
+              
+                <div>
+                  <div>
+                    <h5>Software engineer</h5>
+                    <div class="meta">
+                      <div><time datetime="2017-12-01">Dec 2017</time> – <time datetime="2021-01-01">Jan 2021</time></div>
+                      
+                    </div>
+                  </div>
+                  <p>A large and complex securities operations back-office system</p>
+                  
+                    <ul>
+                      <li><p>MSSQL, .NET Framework, RDLC reports</p></li><li><p>Enhanced personal income taxes calculation system with new business rules, law amendments</p></li><li><p>Maintained integration service</p></li><li><p>Developed RDLC and XSLT reports</p></li><li><p>Optimized SQL stored procedures</p></li>
+                    </ul>
+                  
+                </div>
+              
+                <div>
+                  <div>
+                    <h5>Junior software engineer</h5>
+                    <div class="meta">
+                      <div><time datetime="2016-09-01">Sep 2016</time> – <time datetime="2017-12-01">Dec 2017</time></div>
+                      
+                    </div>
+                  </div>
+                  <p>Request and storage of credit score information in a banking system</p>
+                  
+                    <ul>
+                      <li><p>.NET Framework, MSSQL, WCF</p></li><li><p>Developed an adapter for a 3rd-party API</p></li><li><p>Developed WCF service contracts</p></li><li><p>Maintained stored procedures and unit tests</p></li>
+                    </ul>
+                  
+                </div>
+              
             </div>
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  DevOps
-                  <span class="skill-level">Novice</span>
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">Azure</span>
-                <span class= "skill badge">GCP</span>
-                <span class= "skill badge">AWS</span>
-                <span class= "skill badge">GitLab</span>
-              </div>
-            </div>
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  Front-end
-                  <span class="skill-level">Novice</span>
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">React JS</span>
-                <span class= "skill badge">TypeScript</span>
-              </div>
-            </div>
-            <div class="skills clearfix">
-              <div class="item-skills">
-                  Leadership &amp; Soft Skills
-                  <span class="skill-level">Advanced</span>
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-                <span class= "skill badge">Developing Others</span>
-                <span class= "skill badge">Mentoring</span>
-                <span class= "skill badge">Giving Feedback</span>
-              </div>
-            </div>
-          </div>
-          <!-- HOBBIES -->
-          <div class="box">
-            <h2><i class="fas fa-heart ico"></i> Interests</h2>
-            <div class="interests clearfix">
-              <div class="item-interests">
-                  Chess
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-              </div>
-            </div>
-            <div class="interests clearfix">
-              <div class="item-interests">
-                  Bicycle
-              </div>
-              <div class="col-sm-offset-1 col-sm-12 clearfix">
-              </div>
-            </div>
-          </div>
-          <div class="box">
-            <h2><i class= "fas fa-check-square ico"></i> References</h2>
-            <blockquote>
-              <div>Leonid joint the project and quickly learned the technology stack we were using. During his participation he always came with great quality code, fully tested and even provided feedback about the requirements and possible issues. He was on a different timezone, but he managed to stay after his working hours to overlay customers timezone and provide support when needed. He is a nice person and a great team member which always provided good feedback on peer's code and helped onboarding new team members.</div>
-              <footer>
-                <a href="" target= "_blank">Thiago Fernandes Custodio, Solution Architect, EPAM Systems</a>
-              </footer>
-            </blockquote><br>
-            <blockquote>
-              <div>Throughout the work on the project I was repeatedly convinced that Leonid has a well-developed problem-solving skill. He perfectly understood the root cause of a problem and could effectively solve it. Moreover, the solutions were not some kind of crutches. In one case, the proposed and implemented solution was highly versatile that we started used it in different application modules. Ultimately, this allowed us to reduce amount of code and improve maintainability.</div>
-              <footer>
-                <a href="" target= "_blank">Aibulat Akhmentov, Team Lead, EPAM Systems</a>
-              </footer>
-            </blockquote><br>
-            <blockquote>
-              <div>Leonid is a competent full stack developer. With deep knowledge in databases and clouds (AZURE and AWS). This is confirmed by excellent feedbacks from projects and certificates. In addition to project activities, ру proved himself as a L&D mentor (22 times, 5 different mentoring programs) and community speaker (5 times), participated in project interviews as an interviewer.</div>
-              <footer>
-                <a href="" target= "_blank">Alexandr Usynin, Resource Manager, EPAM Systems</a>
-              </footer>
-            </blockquote><br>
-          </div>
-        </div>
+          </article>
+        
       </div>
-    </div>
-
-  </body>
-</html>
+    </section>
+  
+        
+    <section id="volunteer">
+      <h3>Volunteer</h3>
+      <div class="stack">
+        
+          <article>
+            <header>
+              <h4><a href="https://careers.epam.hu/education/ekids">EPAM eKids</a></h4>
+              <div class="meta">
+                <strong>Teacher</strong>
+                <div><time datetime="2022-08-01">Aug 2022</time> – <time datetime="2023-05-15">May 2023</time></div>
+              </div>
+            </header>
+            <p>The Introduction to Programming with Scratch, a block-based visual programming language developed by the MIT Media Lab, this course aims to cultivate logical reasoning, problem-solving skills, and an understanding of computational thinking.</p>
+            
+              <ul>
+                <li><p>Awarded 'EPAM eKids Guru'</p></li><li><p>Developed chess game viewer in Scratch https://github.com/Ungerfall/learning-scratch/tree/main/chess</p></li>
+              </ul>
+            
+          </article>
+        
+      </div>
+    </section>
+  
+        
+    <section id="education">
+      <h3>Education</h3>
+      <div class="stack">
+        
+          <article>
+            <header>
+              <h4><a href="http://inter.istu.ru/">Kalashnikov Izhevsk State Technical University</a></h4>
+              <div class="meta">
+                <strong>Software Engineering</strong>
+                <div><time datetime="2011-09-01">Sep 2011</time> – <time datetime="2015-07-31">Jul 2015</time></div>
+              </div>
+            </header>
+            <p>Bachelor</p>
+            
+          </article>
+        
+      </div>
+    </section>
+  
+        
+        
+        
+    <section id="certificates">
+      <h3>Certificates</h3>
+      <div class="stack">
+        
+          <article>
+            <header>
+              <h4><a href="https://www.credly.com/badges/1e5a6b0e-3ce5-4196-9a4e-f74e441859d7/public_url">Microsoft Certified: Azure Developer Associate</a></h4>
+              <div class="meta">
+                
+                  <div>
+                    Issued by <strong>Microsoft</strong>
+                  </div>
+                
+                <time datetime="2020-07-08">Jul 2020</time>
+              </div>
+            </header>
+          </article>
+        
+          <article>
+            <header>
+              <h4><a href="https://www.credly.com/badges/dad925d0-b9e4-495f-b4b1-7f7d70280be6/public_url">MCSA: SQL 2016 Database Development</a></h4>
+              <div class="meta">
+                
+                  <div>
+                    Issued by <strong>Microsoft</strong>
+                  </div>
+                
+                <time datetime="2021-01-28">Jan 2021</time>
+              </div>
+            </header>
+          </article>
+        
+          <article>
+            <header>
+              <h4><a href="https://www.credly.com/badges/2f8a1141-3319-415a-92f3-5860745dbaff/public_url">AWS Certified Developer – Associate</a></h4>
+              <div class="meta">
+                
+                  <div>
+                    Issued by <strong>Amazon Web Services Training and Certification</strong>
+                  </div>
+                
+                <time datetime="2021-11-29">Nov 2021</time>
+              </div>
+            </header>
+          </article>
+        
+          <article>
+            <header>
+              <h4><a href="https://www.credly.com/badges/5960472b-86dc-451e-855b-dc665ef31cb3/public_url">Microsoft Certified: Azure Cosmos DB Developer Specialty</a></h4>
+              <div class="meta">
+                
+                  <div>
+                    Issued by <strong>Microsoft</strong>
+                  </div>
+                
+                <time datetime="2022-07-28">Jul 2022</time>
+              </div>
+            </header>
+          </article>
+        
+          <article>
+            <header>
+              <h4><a href="https://www.credly.com/badges/5960472b-86dc-451e-855b-dc665ef31cb3/public_url">Microsoft Certified: Azure Cosmos DB Developer Specialty</a></h4>
+              <div class="meta">
+                
+                  <div>
+                    Issued by <strong>Microsoft</strong>
+                  </div>
+                
+                <time datetime="2022-07-28">Jul 2022</time>
+              </div>
+            </header>
+          </article>
+        
+          <article>
+            <header>
+              <h4><a href="https://www.credential.net/b9977b43-4333-4c6e-9a2d-30b519519800?key=94d3c8946cdb78aec496d97c34c1a6dde976cf0747c9b45ed67eff2a5d112eeb">Associate Cloud Engineer</a></h4>
+              <div class="meta">
+                
+                  <div>
+                    Issued by <strong>Google Cloud</strong>
+                  </div>
+                
+                <time datetime="2023-06-29">Jun 2023</time>
+              </div>
+            </header>
+          </article>
+        
+      </div>
+    </section>
+  
+        
+        
+    <section id="skills">
+      <h3>Skills</h3>
+      <div class="grid-list">
+        
+          <div>
+            <h4>Back-end</h4>
+            
+              <ul class="tag-list">
+                <li>.NET</li><li>C#</li><li>MSSQL</li><li>ASP.NET Core</li><li>Azure</li><li>Azure Cosmos DB</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>DevOps</h4>
+            
+              <ul class="tag-list">
+                <li>Azure</li><li>GCP</li><li>AWS</li><li>GitLab</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Front-end</h4>
+            
+              <ul class="tag-list">
+                <li>React JS</li><li>TypeScript</li>
+              </ul>
+            
+          </div>
+        
+          <div>
+            <h4>Leadership & Soft Skills</h4>
+            
+              <ul class="tag-list">
+                <li>Developing Others</li><li>Mentoring</li><li>Giving Feedback</li>
+              </ul>
+            
+          </div>
+        
+      </div>
+    </section>
+  
+        
+    <section id="languages">
+      <h3>Languages</h3>
+      <div class="grid-list">
+        
+          <div>
+            <h4>English</h4>
+            B2
+          </div>
+        
+          <div>
+            <h4>Russian</h4>
+            Native
+          </div>
+        
+      </div>
+    </section>
+  
+        
+    <section id="interests">
+      <h3>Interests</h3>
+      <div class="grid-list">
+        
+          <div>
+            <h4>Chess</h4>
+            
+          </div>
+        
+          <div>
+            <h4>Bicycle</h4>
+            
+          </div>
+        
+      </div>
+    </section>
+  
+        
+    <section id="references">
+      <h3>References</h3>
+      <div class="stack">
+        
+          <blockquote>
+            <p>Leonid joint the project and quickly learned the technology stack we were using. During his participation he always came with great quality code, fully tested and even provided feedback about the requirements and possible issues. He was on a different timezone, but he managed to stay after his working hours to overlay customers timezone and provide support when needed. He is a nice person and a great team member which always provided good feedback on peer's code and helped onboarding new team members.</p>
+            
+              <p>
+                <cite>Thiago Fernandes Custodio, Solution Architect, EPAM Systems</cite>
+              </p>
+            
+          </blockquote>
+        
+          <blockquote>
+            <p>Throughout the work on the project I was repeatedly convinced that Leonid has a well-developed problem-solving skill. He perfectly understood the root cause of a problem and could effectively solve it. Moreover, the solutions were not some kind of crutches. In one case, the proposed and implemented solution was highly versatile that we started used it in different application modules. Ultimately, this allowed us to reduce amount of code and improve maintainability.</p>
+            
+              <p>
+                <cite>Aibulat Akhmentov, Team Lead, EPAM Systems</cite>
+              </p>
+            
+          </blockquote>
+        
+          <blockquote>
+            <p>Leonid is a competent full stack developer. With deep knowledge in databases and clouds (AZURE and AWS). This is confirmed by excellent feedbacks from projects and certificates. In addition to project activities, ру proved himself as a L&amp;D mentor (22 times, 5 different mentoring programs) and community speaker (5 times), participated in project interviews as an interviewer.</p>
+            
+              <p>
+                <cite>Alexandr Usynin, Resource Manager, EPAM Systems</cite>
+              </p>
+            
+          </blockquote>
+        
+      </div>
+    </section>
+  
+      </body>
+    </html>
