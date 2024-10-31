@@ -2,10 +2,10 @@
   "basics": {
     "name": "Leonid Petrov",
     "label": ".NET Software engineer",
-    "image": "https://media.licdn.com/dms/image/C5603AQFhlYUgg7PK8w/profile-displayphoto-shrink_800_800/0/1601146919329?e=1698883200&v=beta&t=nexbjuAq2MQ0UkNJz-nj6fNGy8ji13LO838t7eGAM-8",
+    "image": "C:/Users/Leonid_Petrov1/OneDrive/Pictures/personal.jpg",
     "email": "ungerfall@gmail.com",
     "url": "https://ungerfall.github.io/",
-    "summary": "Software Engineer with over 7 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.",
+    "summary": "Software Engineer with over 8 years of professional experience specializing in .NET, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.",
     "location": {
       "city": "Antalya",
       "countryCode": "TR"
@@ -40,7 +40,7 @@
     "url": "https://epam.com",
     "startDate": "2023-06-01",
     "endDate": "2023-10-01",
-    "summary": "New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research which started as an AI hackathon project"
+    "summary": "New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research"
   },
   {
     "name": "EPAM Systems",

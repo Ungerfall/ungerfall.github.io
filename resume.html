@@ -1,426 +1,745 @@
-<!DOCTYPE html>
-    <html lang="en" style="">
-      <head>
-        <meta charset="utf-8">
-        
-    <title>Leonid Petrov</title>
-    <meta name="description" content="Software Engineer with over 7 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.">
-  
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
-        <style>:root{color-scheme:light dark;--color-background-light: #ffffff;--color-dimmed-light: #f3f4f5;--color-primary-light: #191e23;--color-secondary-light: #6c7781;--color-accent-light: #0073aa;--color-background-dark: #191e23;--color-dimmed-dark: #23282d;--color-primary-dark: #fbfbfc;--color-secondary-dark: #ccd0d4;--color-accent-dark: #00a0d2;--color-background: var(--color-background-light);--color-dimmed: var(--color-dimmed-light);--color-primary: var(--color-primary-light);--color-secondary: var(--color-secondary-light);--color-accent: var(--color-accent-light);--scale-ratio: 1.25;--scale0: 1rem;--scale1: calc(var(--scale0) * var(--scale-ratio));--scale2: calc(var(--scale1) * var(--scale-ratio));--scale3: calc(var(--scale2) * var(--scale-ratio));--scale4: calc(var(--scale3) * var(--scale-ratio));--scale5: calc(var(--scale4) * var(--scale-ratio))}@media (prefers-color-scheme: dark){:root{--color-background: var(--color-background-dark);--color-dimmed: var(--color-dimmed-dark);--color-primary: var(--color-primary-dark);--color-secondary: var(--color-secondary-dark);--color-accent: var(--color-accent-dark)}}*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px}body{background:var(--color-background);color:var(--color-primary);display:grid;font:1em/1.5 Lato,sans-serif;gap:2em;grid-template-columns:[full-start] 1fr [main-start side-start] minmax(min-content,12em) [side-end content-start] minmax(min-content,36em) [main-end content-end] 1fr [full-end];grid-template-rows:auto [content] 0;margin-bottom:4em}body:before{content:"";grid-column:full;grid-row:content}ol,ul{padding-left:1em}:not(.icon-list,.tag-list)>li+li{margin-top:.4em}li::marker,.network{color:var(--color-secondary)}a{color:var(--color-accent);text-decoration:none}a:focus,a:hover{text-decoration:underline}h1,h2,h3,h5{font-weight:400}h1,h2,h3{line-height:1.2}h1{font-size:var(--scale5)}h2{color:var(--color-secondary);font-size:var(--scale4)}h3{color:var(--color-secondary);font-size:var(--scale3);grid-column:side;margin-bottom:1rem}h4{font-size:var(--scale2)}h5{font-size:var(--scale1)}h6{font-size:var(--scale0)}blockquote{border-left:.2em solid var(--color-dimmed);padding-left:1em}cite{color:var(--color-secondary);font-style:inherit}cite:before{content:"— "}svg{margin-right:.2em;vertical-align:text-bottom}.masthead{background:var(--color-dimmed);display:inherit;gap:inherit;grid-column:full;grid-template-columns:inherit;padding:4em 0;text-align:center}.masthead>*,section{grid-column:main}.masthead>img{border:4px solid;border-radius:50%;margin:0 auto;max-width:12em}article>*+*,blockquote>*+*,.timeline>div>*+*{margin-top:.6em}.meta{color:var(--color-secondary)}.stack{display:grid;gap:1.5em}.icon-list{display:flex;flex-wrap:wrap;gap:.4em 1em;justify-content:center;list-style:none;padding:0}.grid-list{display:grid;gap:1em}.tag-list{display:flex;flex-wrap:wrap;gap:.4em;list-style:none;padding:0}.tag-list>li{background:var(--color-dimmed);border-radius:.2em;padding:.2em .6em}.timeline>div{position:relative}.timeline>div:not(:last-child){padding-bottom:1rem}.timeline>div:not(:last-child):before{content:"";position:absolute;top:1rem;left:-15px;width:2px;height:100%;background:var(--color-secondary)}.timeline>div:not(:only-child):after{content:"";position:absolute;top:.6rem;left:-20px;width:8px;height:8px;background:var(--color-secondary);border:2px solid var(--color-background);border-radius:50%}@media print,(min-width: 48em){h3{text-align:right;margin-bottom:inherit}.masthead{text-align:inherit}.masthead>*,section{grid-column:content}.masthead img{grid-column:side;grid-row:span 2;max-width:100%}section{display:contents}.icon-list{flex-direction:column}.grid-list{grid-template-columns:repeat(auto-fit,minmax(calc((100% - 1em)/2),1fr))}}
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Leonid Petrov</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+html {
+  background: white;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: white;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #39424B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #2895F1;
+}
+
+a .fa-external-link {
+  font-size: 10px;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 11px;
+}
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px;
+}
+
+em {
+  color: #999;
+}
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+ul.two-column {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 28px;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+ul.two-column li {
+  padding-left: 0;
+}
+
+@page {
+  size: A4;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #56817A;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px;
+}
+
+.profile-pic img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #56817A;
+}
+
+.summary {
+  margin: 5px 0 5px;
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: dimgray;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #56817A;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word;
+}
+
+.right-column {
+  width: auto;
+  overflow: hidden;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none;
+  }
+
+  .page .resume-header,
+  .page .resume-content {
+    padding: 0 22px 0 34px;
+  }
+
+  .container {
+    page-break-inside: avoid;
+  }
+
+  .work-container .item {
+    page-break-inside: avoid;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px;
+}
+
+.info-tag-container .fa {
+  font-size: 14px;
+  width: 12px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info-tag-container .fa.fa-map-marker {
+  font-size: 16px;
+}
+
+.info-tag-container .fa.fa-mobile {
+  font-size: 18px;
+}
+
+.info-tag-container .fa.fa-envelope-o {
+  font-size: 12px;
+}
+
+.info-tag-container .fa.fa-desktop {
+  font-size: 11px;
+}
+
+.info-tag-container .fa.fa-external-link {
+  width: auto;
+  font-size: inherit;
+  vertical-align: text-top;
+}
+
+.info-tag-container .info-text {
+  font-size: 12px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  width: 139px;
+}
+
+.references-container .fa {
+  font-size: 14px;
+}
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-skill {
+  font-size: 80%;
+}
+
+.skill {
+  margin: .15em;
+  padding: .15em;
+  background: ghostwhite;
+  border-radius: 5px;
+}
 </style>
-      </head>
-      <body>
-        
-    <header class="masthead">
-      <img src="https://media.licdn.com/dms/image/C5603AQFhlYUgg7PK8w/profile-displayphoto-shrink_800_800/0/1601146919329?e=1698883200&v=beta&t=nexbjuAq2MQ0UkNJz-nj6fNGy8ji13LO838t7eGAM-8" alt="">
-      <div>
-        <h1>Leonid Petrov</h1>
-        <h2>.NET Software engineer</h2>
-      </div>
-      <article><p>Software Engineer with over 7 years of professional experience specializing in .NET frameworks, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.</p></article>
-      <ul class="icon-list">
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            Antalya, Türkiye
-          </li>
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            <a href="mailto:ungerfall@gmail.com">ungerfall@gmail.com</a>
-          </li>
-        
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-            <a href="https://ungerfall.github.io/">ungerfall.github.io</a>
-          </li>
-        
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            <a href="https://www.linkedin.com/in/leonid-petrov-803808195/">leonid-petrov-803808195</a>
-            <span class="network">(LinkedIn)</span>
-          </li>
-        
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            <a href="https://github.com/Ungerfall">Ungerfall</a>
-            <span class="network">(GitHub)</span>
-          </li>
-        
-      </ul>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header class="resume-header clearfix">
+        <div class="profile-header pull-left">
+            <h1>Leonid Petrov</h1>
+            <h2>.NET Software engineer</h2>
+        </div>
+        <div class="profile-pic pull-right">
+        </div>
     </header>
-  
-        
-    <section id="work">
-      <h3>Work</h3>
-      <div class="stack">
-        
-          <article>
-            <header>
-              <h4><a href="https://epam.com">EPAM Systems</a></h4>
-              <div class="meta">
-                
-              </div>
-            </header>
-            <div class="timeline">
-              
-                <div>
-                  <div>
-                    <h5>Senior software engineer</h5>
-                    <div class="meta">
-                      <div><time datetime="2022-06-01">Jun 2022</time> – Present</div>
-                      
-                    </div>
-                  </div>
-                  <p>Data transfer system of an alternative investment platform</p>
-                  
-                    <ul>
-                      <li><p>Fixed and improved integration tests during project onboarding</p></li><li><p>Helped to onboard two developers</p></li><li><p>Improved observability of the data transfer system using observable monitoring and notifications</p></li><li><p>Migrated net48 and netcore3.1 to net6.0 target framework</p></li>
-                    </ul>
-                  
-                </div>
-              
-                <div>
-                  <div>
-                    <h5>Build engineer</h5>
-                    <div class="meta">
-                      <div><time datetime="2023-06-01">Jun 2023</time> – <time datetime="2023-10-01">Oct 2023</time></div>
-                      
-                    </div>
-                  </div>
-                  <p>New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research which started as an AI hackathon project</p>
-                  
-                </div>
-              
-                <div>
-                  <div>
-                    <h5>Senior software engineer</h5>
-                    <div class="meta">
-                      <div><time datetime="2022-01-01">Jan 2022</time> – <time datetime="2022-06-01">Jun 2022</time></div>
-                      
-                    </div>
-                  </div>
-                  <p>A key developer for a new cloud native educational platform to integrate internal and external systems</p>
-                  
-                    <ul>
-                      <li><p>Azure (Cosmos DB, Functions, Logic Apps), .net 6, ReactJS</p></li><li><p>Developed and designed React application</p></li><li><p>Developed and designed ASP.NET Core WebApi</p></li><li><p>Developed data access layer for CosmosDB</p></li>
-                    </ul>
-                  
-                </div>
-              
-                <div>
-                  <div>
-                    <h5>Software engineer</h5>
-                    <div class="meta">
-                      <div><time datetime="2021-01-01">Jan 2021</time> – <time datetime="2022-01-01">Jan 2022</time></div>
-                      
-                    </div>
-                  </div>
-                  <p>New system to automate loan usage monitoring</p>
-                  
-                    <ul>
-                      <li><p>ASP.NET Core, EF Core, MassTransit, OData, SignalR</p></li><li><p>Designed database structure for the main business processes (Funds transfer, Credit products repayment)</p></li><li><p>Developed several HTTP services using ASP.NET Core with OData support for filtering and pagination</p></li><li><p>Developed Notification Hub Web API using SignalR</p></li>
-                    </ul>
-                  
-                </div>
-              
-                <div>
-                  <div>
-                    <h5>Software engineer</h5>
-                    <div class="meta">
-                      <div><time datetime="2017-12-01">Dec 2017</time> – <time datetime="2021-01-01">Jan 2021</time></div>
-                      
-                    </div>
-                  </div>
-                  <p>A large and complex securities operations back-office system</p>
-                  
-                    <ul>
-                      <li><p>MSSQL, .NET Framework, RDLC reports</p></li><li><p>Enhanced personal income taxes calculation system with new business rules, law amendments</p></li><li><p>Maintained integration service</p></li><li><p>Developed RDLC and XSLT reports</p></li><li><p>Optimized SQL stored procedures</p></li>
-                    </ul>
-                  
-                </div>
-              
-                <div>
-                  <div>
-                    <h5>Junior software engineer</h5>
-                    <div class="meta">
-                      <div><time datetime="2016-09-01">Sep 2016</time> – <time datetime="2017-12-01">Dec 2017</time></div>
-                      
-                    </div>
-                  </div>
-                  <p>Request and storage of credit score information in a banking system</p>
-                  
-                    <ul>
-                      <li><p>.NET Framework, MSSQL, WCF</p></li><li><p>Developed an adapter for a 3rd-party API</p></li><li><p>Developed WCF service contracts</p></li><li><p>Maintained stored procedures and unit tests</p></li>
-                    </ul>
-                  
-                </div>
-              
+    <div class="resume-content">
+      <aside class="left-column">
+        <div class="container about-container">
+            <div class="title">
+                <h3>About</h3>
+                <div class="keyline"></div>
             </div>
-          </article>
+                <div class="info-tag-container">
+                    <i class="fa fa-map-marker"></i>
+                
+                        <h6 class="info-text"> Antalya   TR</h6>
+                </div>
         
+        
+                <div class="info-tag-container">
+                    <i class="fa fa-envelope-o"></i>
+                
+                        <h6 class="info-text">
+                            <a href="mailto:ungerfall@gmail.com" target="_blank">
+                                ungerfall@gmail.com
+                            </a>
+                        </h6>
+                </div>
+        
+        
+        
+                                <div class="info-tag-container">
+                                    <i class="fa fa-linkedin-square"></i>
+                                
+                                        <h6 class="info-text">
+                                            <a href="https://www.linkedin.com/in/leonid-petrov-803808195/" target="_blank">
+                                                leonid-petrov-803808195
+                                            </a>
+                                        </h6>
+                                </div>
+                                 <div class="info-tag-container">
+                                     <i class="fa fa-github"></i>
+                                 
+                                         <h6 class="info-text">
+                                             <a href="https://github.com/Ungerfall" target="_blank">
+                                                 Ungerfall
+                                             </a>
+                                         </h6>
+                                 </div>
+        </section>
+            <div class="skills-container">
+                    <section class="container">
+                            <div class="title">
+                                <h3>Back-end</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Advanced</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">.NET</h6>
+                                    <h6 class="main-skill skill">C#</h6>
+                                    <h6 class="main-skill skill">MSSQL</h6>
+                                    <h6 class="main-skill skill">ASP.NET Core</h6>
+                                    <h6 class="main-skill skill">Azure</h6>
+                                    <h6 class="main-skill skill">Azure Cosmos DB</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>DevOps</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Novice</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Azure</h6>
+                                    <h6 class="main-skill skill">GCP</h6>
+                                    <h6 class="main-skill skill">AWS</h6>
+                                    <h6 class="main-skill skill">GitLab</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Front-end</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Novice</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">React JS</h6>
+                                    <h6 class="main-skill skill">TypeScript</h6>
+                            </div>
+                    </section>
+                    <section class="container">
+                            <div class="title">
+                                <h3>Leadership &amp; Soft Skills</h3>
+                                <div class="keyline"></div>
+                            </div>                    <h4 class="bold capitalize">Advanced</h4>
+                            <div class="minimal flex-container">
+                                    <h6 class="main-skill skill">Developing Others</h6>
+                                    <h6 class="main-skill skill">Mentoring</h6>
+                                    <h6 class="main-skill skill">Giving Feedback</h6>
+                            </div>
+                    </section>
+            </div>
+            <div class="container languages-container">
+                <div class="title">
+                    <h3>Languages</h3>
+                    <div class="keyline"></div>
+                </div>
+                <ul class="minimal">
+                        <li>
+                            <h6>English <em>(B2)</em></h6>
+                        </li>
+                        <li>
+                            <h6>Russian <em>(Native)</em></h6>
+                        </li>
+                </ul>
+            </div>
+            <div class="container interests-container">
+                <div class="title">
+                    <h3>Interests</h3>
+                    <div class="keyline"></div>
+                </div>
+                    <section class="item">
+                            <h4 class="bold">Chess</h4>
+                    </section>
+                    <section class="item">
+                            <h4 class="bold">Bicycle</h4>
+                    </section>
+            </div>
+      </aside>
+      <div class="right-column">
+                <div class="container summary-container">
+                    <div class="title">
+                        <h3>Summary</h3>
+                        <div class="keyline"></div>
+                    </div>            <p class="summary">
+                        Software Engineer with over 8 years of professional experience specializing in .NET, MS SQL RDBMS, and Azure cloud services. Developing, deploying, and maintaining production-level applications using ReactJS. Skilled in mentoring junior to mid-level engineers and well-versed in both Iterative Waterfall and Agile project management methodologies.
+                    </p>
+                </div>
+        <div class="container work-container">
+            <div class="title">
+                <h3>Experience</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2022</span>
+                                <span class="endDate"> - Present</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Senior software engineer</h4>
+        
+        
+                    <p class="summary">Data transfer system of an alternative investment platform</p>
+        
+                    <ul>
+                        <li>Fixed and improved integration tests during project onboarding</li>
+                        <li>Helped to onboard two developers</li>
+                        <li>Improved observability of the data transfer system using observable monitoring and notifications</li>
+                        <li>Migrated net48 and netcore3.1 to net6.0 target framework</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">06/2023</span>
+                                <span class="endDate"> - 10/2023</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Build engineer</h4>
+        
+        
+                    <p class="summary">New AI assisted (Open AI API: chatgpt and vectorization) system for e-commerce sites research</p>
+        
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2022</span>
+                                <span class="endDate"> - 06/2022</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Senior software engineer</h4>
+        
+        
+                    <p class="summary">A key developer for a new cloud native educational platform to integrate internal and external systems</p>
+        
+                    <ul>
+                        <li>Azure (Cosmos DB, Functions, Logic Apps), .net 6, ReactJS</li>
+                        <li>Developed and designed React application</li>
+                        <li>Developed and designed ASP.NET Core WebApi</li>
+                        <li>Developed data access layer for CosmosDB</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">01/2021</span>
+                                <span class="endDate"> - 01/2022</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Software engineer</h4>
+        
+        
+                    <p class="summary">New system to automate loan usage monitoring</p>
+        
+                    <ul>
+                        <li>ASP.NET Core, EF Core, MassTransit, OData, SignalR</li>
+                        <li>Designed database structure for the main business processes (Funds transfer, Credit products repayment)</li>
+                        <li>Developed several HTTP services using ASP.NET Core with OData support for filtering and pagination</li>
+                        <li>Developed Notification Hub Web API using SignalR</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">12/2017</span>
+                                <span class="endDate"> - 01/2021</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Software engineer</h4>
+        
+        
+                    <p class="summary">A large and complex securities operations back-office system</p>
+        
+                    <ul>
+                        <li>MSSQL, .NET Framework, RDLC reports</li>
+                        <li>Enhanced personal income taxes calculation system with new business rules, law amendments</li>
+                        <li>Maintained integration service</li>
+                        <li>Developed RDLC and XSLT reports</li>
+                        <li>Optimized SQL stored procedures</li>
+                    </ul>
+                </section>
+                <section class="item">
+                    <div class="section-header clearfix">
+                        <h5 class="italic pull-right">
+                                <span class="startDate">09/2016</span>
+                                <span class="endDate"> - 12/2017</span>
+                        </h5>
+                    </div>
+        
+                    <h4>Junior software engineer</h4>
+        
+        
+                    <p class="summary">Request and storage of credit score information in a banking system</p>
+        
+                    <ul>
+                        <li>.NET Framework, MSSQL, WCF</li>
+                        <li>Developed an adapter for a 3rd-party API</li>
+                        <li>Developed WCF service contracts</li>
+                        <li>Maintained stored procedures and unit tests</li>
+                    </ul>
+                </section>
+        </div>
+        <div class="container education-container">
+            <div class="title">
+            <h3>Education</h3>
+            <div class="keyline"></div>
+        </div> 
+            <section class="item">
+                <div class="section-header clearfix">
+            <h3 class="bold pull-left">
+                    Kalashnikov Izhevsk State Technical University
+            </h3>
+            <h5 class="italic pull-right">
+                    <span class="startDate">09/2011</span>
+                    <span class="endDate"> - 07/2015</span>
+            </h5>
+        </div>
+         
+                <h4>Bachelor Software Engineering</h4>
+        
+              </section>
+        </div>
+        <div class="container volunteer-container">
+            <div class="title">
+                <h3>Volunteer</h3>
+                <div class="keyline"></div>
+            </div>
+            <section class="item">
+                <div class="section-header clearfix">
+                    <h3 class="bold pull-left">
+                            EPAM eKids
+                    </h3>
+                    <h5 class="italic pull-right">
+                            <span class="startDate">08/2022</span>
+                            <span class="endDate"> - 05/2023</span>
+                    </h5>
+                </div>
+                <h5>Teacher</h5>
+        
+                <p class="summary">The Introduction to Programming with Scratch, a block-based visual programming language developed by the MIT Media Lab, this course aims to cultivate logical reasoning, problem-solving skills, and an understanding of computational thinking.</p>
+        
+                <ul>
+                    <li>Awarded &#x27;EPAM eKids Guru&#x27;</li>
+                    <li>Developed chess game viewer in Scratch https://github.com/Ungerfall/learning-scratch/tree/main/chess</li>
+                </ul>
+            </section>
+        </div>
+        <div class="container references-container">
+            <div class="title">
+                <h3>References</h3>
+                <div class="keyline"></div>
+            </div>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Leonid joint the project and quickly learned the technology stack we were using. During his participation he always came with great quality code, fully tested and even provided feedback about the requirements and possible issues. He was on a different timezone, but he managed to stay after his working hours to overlay customers timezone and provide support when needed. He is a nice person and a great team member which always provided good feedback on peer&#x27;s code and helped onboarding new team members.
+                    </blockquote>
+        
+                    <h5 class="pull-right"> — Thiago Fernandes Custodio, Solution Architect, EPAM Systems</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Throughout the work on the project I was repeatedly convinced that Leonid has a well-developed problem-solving skill. He perfectly understood the root cause of a problem and could effectively solve it. Moreover, the solutions were not some kind of crutches. In one case, the proposed and implemented solution was highly versatile that we started used it in different application modules. Ultimately, this allowed us to reduce amount of code and improve maintainability.
+                    </blockquote>
+        
+                    <h5 class="pull-right"> — Aibulat Akhmentov, Team Lead, EPAM Systems</h5>
+                </section>
+                <section class="item clearfix">
+                    <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+                    <blockquote>
+                        Leonid is a competent full stack developer. With deep knowledge in databases and clouds (AZURE and AWS). This is confirmed by excellent feedbacks from projects and certificates. In addition to project activities, ру proved himself as a L&amp;D mentor (22 times, 5 different mentoring programs) and community speaker (5 times), participated in project interviews as an interviewer.
+                    </blockquote>
+        
+                    <h5 class="pull-right"> — Alexandr Usynin, Resource Manager, EPAM Systems</h5>
+                </section>
+        </div>
       </div>
-    </section>
-  
-        
-    <section id="volunteer">
-      <h3>Volunteer</h3>
-      <div class="stack">
-        
-          <article>
-            <header>
-              <h4><a href="https://careers.epam.hu/education/ekids">EPAM eKids</a></h4>
-              <div class="meta">
-                <strong>Teacher</strong>
-                <div><time datetime="2022-08-01">Aug 2022</time> – <time datetime="2023-05-15">May 2023</time></div>
-              </div>
-            </header>
-            <p>The Introduction to Programming with Scratch, a block-based visual programming language developed by the MIT Media Lab, this course aims to cultivate logical reasoning, problem-solving skills, and an understanding of computational thinking.</p>
-            
-              <ul>
-                <li><p>Awarded 'EPAM eKids Guru'</p></li><li><p>Developed chess game viewer in Scratch https://github.com/Ungerfall/learning-scratch/tree/main/chess</p></li>
-              </ul>
-            
-          </article>
-        
-      </div>
-    </section>
-  
-        
-    <section id="education">
-      <h3>Education</h3>
-      <div class="stack">
-        
-          <article>
-            <header>
-              <h4><a href="http://inter.istu.ru/">Kalashnikov Izhevsk State Technical University</a></h4>
-              <div class="meta">
-                <strong>Software Engineering</strong>
-                <div><time datetime="2011-09-01">Sep 2011</time> – <time datetime="2015-07-31">Jul 2015</time></div>
-              </div>
-            </header>
-            <p>Bachelor</p>
-            
-          </article>
-        
-      </div>
-    </section>
-  
-        
-        
-        
-    <section id="certificates">
-      <h3>Certificates</h3>
-      <div class="stack">
-        
-          <article>
-            <header>
-              <h4><a href="https://www.credly.com/badges/1e5a6b0e-3ce5-4196-9a4e-f74e441859d7/public_url">Microsoft Certified: Azure Developer Associate</a></h4>
-              <div class="meta">
-                
-                  <div>
-                    Issued by <strong>Microsoft</strong>
-                  </div>
-                
-                <time datetime="2020-07-08">Jul 2020</time>
-              </div>
-            </header>
-          </article>
-        
-          <article>
-            <header>
-              <h4><a href="https://www.credly.com/badges/dad925d0-b9e4-495f-b4b1-7f7d70280be6/public_url">MCSA: SQL 2016 Database Development</a></h4>
-              <div class="meta">
-                
-                  <div>
-                    Issued by <strong>Microsoft</strong>
-                  </div>
-                
-                <time datetime="2021-01-28">Jan 2021</time>
-              </div>
-            </header>
-          </article>
-        
-          <article>
-            <header>
-              <h4><a href="https://www.credly.com/badges/2f8a1141-3319-415a-92f3-5860745dbaff/public_url">AWS Certified Developer – Associate</a></h4>
-              <div class="meta">
-                
-                  <div>
-                    Issued by <strong>Amazon Web Services Training and Certification</strong>
-                  </div>
-                
-                <time datetime="2021-11-29">Nov 2021</time>
-              </div>
-            </header>
-          </article>
-        
-          <article>
-            <header>
-              <h4><a href="https://www.credly.com/badges/5960472b-86dc-451e-855b-dc665ef31cb3/public_url">Microsoft Certified: Azure Cosmos DB Developer Specialty</a></h4>
-              <div class="meta">
-                
-                  <div>
-                    Issued by <strong>Microsoft</strong>
-                  </div>
-                
-                <time datetime="2022-07-28">Jul 2022</time>
-              </div>
-            </header>
-          </article>
-        
-          <article>
-            <header>
-              <h4><a href="https://www.credly.com/badges/5960472b-86dc-451e-855b-dc665ef31cb3/public_url">Microsoft Certified: Azure Cosmos DB Developer Specialty</a></h4>
-              <div class="meta">
-                
-                  <div>
-                    Issued by <strong>Microsoft</strong>
-                  </div>
-                
-                <time datetime="2022-07-28">Jul 2022</time>
-              </div>
-            </header>
-          </article>
-        
-          <article>
-            <header>
-              <h4><a href="https://www.credential.net/b9977b43-4333-4c6e-9a2d-30b519519800?key=94d3c8946cdb78aec496d97c34c1a6dde976cf0747c9b45ed67eff2a5d112eeb">Associate Cloud Engineer</a></h4>
-              <div class="meta">
-                
-                  <div>
-                    Issued by <strong>Google Cloud</strong>
-                  </div>
-                
-                <time datetime="2023-06-29">Jun 2023</time>
-              </div>
-            </header>
-          </article>
-        
-      </div>
-    </section>
-  
-        
-        
-    <section id="skills">
-      <h3>Skills</h3>
-      <div class="grid-list">
-        
-          <div>
-            <h4>Back-end</h4>
-            
-              <ul class="tag-list">
-                <li>.NET</li><li>C#</li><li>MSSQL</li><li>ASP.NET Core</li><li>Azure</li><li>Azure Cosmos DB</li>
-              </ul>
-            
-          </div>
-        
-          <div>
-            <h4>DevOps</h4>
-            
-              <ul class="tag-list">
-                <li>Azure</li><li>GCP</li><li>AWS</li><li>GitLab</li>
-              </ul>
-            
-          </div>
-        
-          <div>
-            <h4>Front-end</h4>
-            
-              <ul class="tag-list">
-                <li>React JS</li><li>TypeScript</li>
-              </ul>
-            
-          </div>
-        
-          <div>
-            <h4>Leadership & Soft Skills</h4>
-            
-              <ul class="tag-list">
-                <li>Developing Others</li><li>Mentoring</li><li>Giving Feedback</li>
-              </ul>
-            
-          </div>
-        
-      </div>
-    </section>
-  
-        
-    <section id="languages">
-      <h3>Languages</h3>
-      <div class="grid-list">
-        
-          <div>
-            <h4>English</h4>
-            B2
-          </div>
-        
-          <div>
-            <h4>Russian</h4>
-            Native
-          </div>
-        
-      </div>
-    </section>
-  
-        
-    <section id="interests">
-      <h3>Interests</h3>
-      <div class="grid-list">
-        
-          <div>
-            <h4>Chess</h4>
-            
-          </div>
-        
-          <div>
-            <h4>Bicycle</h4>
-            
-          </div>
-        
-      </div>
-    </section>
-  
-        
-    <section id="references">
-      <h3>References</h3>
-      <div class="stack">
-        
-          <blockquote>
-            <p>Leonid joint the project and quickly learned the technology stack we were using. During his participation he always came with great quality code, fully tested and even provided feedback about the requirements and possible issues. He was on a different timezone, but he managed to stay after his working hours to overlay customers timezone and provide support when needed. He is a nice person and a great team member which always provided good feedback on peer's code and helped onboarding new team members.</p>
-            
-              <p>
-                <cite>Thiago Fernandes Custodio, Solution Architect, EPAM Systems</cite>
-              </p>
-            
-          </blockquote>
-        
-          <blockquote>
-            <p>Throughout the work on the project I was repeatedly convinced that Leonid has a well-developed problem-solving skill. He perfectly understood the root cause of a problem and could effectively solve it. Moreover, the solutions were not some kind of crutches. In one case, the proposed and implemented solution was highly versatile that we started used it in different application modules. Ultimately, this allowed us to reduce amount of code and improve maintainability.</p>
-            
-              <p>
-                <cite>Aibulat Akhmentov, Team Lead, EPAM Systems</cite>
-              </p>
-            
-          </blockquote>
-        
-          <blockquote>
-            <p>Leonid is a competent full stack developer. With deep knowledge in databases and clouds (AZURE and AWS). This is confirmed by excellent feedbacks from projects and certificates. In addition to project activities, ру proved himself as a L&amp;D mentor (22 times, 5 different mentoring programs) and community speaker (5 times), participated in project interviews as an interviewer.</p>
-            
-              <p>
-                <cite>Alexandr Usynin, Resource Manager, EPAM Systems</cite>
-              </p>
-            
-          </blockquote>
-        
-      </div>
-    </section>
-  
-      </body>
-    </html>
+    </div>
+  </main>
+</body>
+
+</html>
