@@ -55,7 +55,10 @@ theme: minima
 exclude:
   - presentation/
   - bikeshed/
-#   - Gemfile
+  - Gemfile
+  - cover-letter.docx
+  - cover-letter.pdf
+  - resume.json
 #   - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
