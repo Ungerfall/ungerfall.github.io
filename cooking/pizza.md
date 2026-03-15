@@ -28,3 +28,9 @@ It is important to use scales.
 ### Dough
 1. Put cold water in a container
 2. Add yeasts and wait 10 minutes - this helps to soak and dissolve
+3. Test collapsable
+<details>
+<summary>Click to expand the image</summary>
+![dough after 100](/assets/cooking/pizza/after-100-kneeds.jpg)
+Some additional text
+</details>
