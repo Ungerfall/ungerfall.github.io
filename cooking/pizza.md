@@ -1,8 +1,9 @@
 ---
 layout: page
-title: "Pizza" ![pizza](/assets/cooking/pizza/pizza.jpg)
+title: "Pizza"
 toc: true
 ---
+![pizza](/assets/cooking/pizza/pizza.jpg)
 
 ## Ingredients
 ![pizza ingredients](/assets/cooking/pizza/ingredients.jpg)
@@ -35,24 +36,24 @@ with the container closed. The gluten will start to build up, making
 kneeding much easier
 <details>
 <summary>Click to see the image</summary>
-![dough after 100](/assets/cooking/pizza/after-100-kneeds.jpg)
+<img src="/assets/cooking/pizza/after-100-kneeds.jpg" />
+<img src="/assets/cooking/pizza/after-100-kneeds-and-rest.jpg" />
 </details>
-<details>
-<summary>Click to see the image</summary>
-![dough after 100 and rest](/assets/cooking/pizza/after-100-kneeds-and-rest.jpg)
-</details>
+
 5. Transfer the dough to the counter and knead 500 times. I usually do a series
 of 80 + 20 kneedings, 20 of which use the stretch-and-fold technique
 6. Set aside, covered, for an hour
 <details>
 <summary>Click to see the image</summary>
-![dough after 500](/assets/cooking/pizza/after-500-kneeds.jpg)
+<img src="/assets/cooking/pizza/after-500-kneeds.jpg" />
 </details>
+
 7. Make 250g balls and put them in the fridge overnight
 <details>
 <summary>Click to see the image</summary>
-![dough balls](/assets/cooking/pizza/balls.jpg)
+<img src="/assets/cooking/pizza/balls.jpg" />
 </details>
+
 8. In the morning take one or more of the balls and place them in a bowl. Close
 with cling film and leave at room temperature to rise. The rising time
 depends on the amount of yeast and the room temperature. For our quantities and
@@ -60,7 +61,7 @@ depends on the amount of yeast and the room temperature. For our quantities and
 with a different degree of fermentation, resulting in a different flavour
 <details>
 <summary>Click to see the image</summary>
-![dough in morning](/assets/cooking/pizza/in-morning-for-rising.jpg)
+<img src="/assets/cooking/pizza/in-morning-for-rising.jpg" />
 </details>
 
 ### Pizza sauce
