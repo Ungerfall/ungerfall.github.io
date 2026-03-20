@@ -3,77 +3,73 @@ layout: page
 title:  "Pizza"
 ---
 
-## Ingridients
-![pizza ingridients](/assets/cooking/pizza/ingridients.jpg)
+## Ingredients
+![pizza ingredients](/assets/cooking/pizza/ingredients.jpg)
 
-1. Flour - strong, at least 12.5 g of protein
+1. Flour - at least 12.5 g of protein per 100g
 2. Water - cold
 3. Salt
-4. Yeasts - dry
-5. Tomato sause
+4. Yeast - dry
+5. Tomato sauce
 6. Cheese - mozzarella, kashar or dil
-7. Seasonings - italian, olive oil
+7. Seasonings - Italian herbs, olive oil
 
 ## Quantities
 
-1. Water and flour - for each 100g of flour 62g of water.
-This makes 62% dough hidration - not sticky to kneed yet soft.
-2. Salt - 2% (for each 100g of flour 2g of salt).
-3. Yeasts - 0.25% (for each 100g of flour 0.25g of yeasts).
-I usually use 800g of flour - this is enought for 5 of 250g pizza balls 
+1. Water and flour: for every 100g of flour, use 62g of water.
+This gives a dough hydration of 62%, which is not sticky to knead yet soft.
+2. Salt: 2% (2g of salt for every 100g of flour ).
+3. Yeast: 0.25% (for every 100g of flour, use 0.25g of yeast).
+I usually use 800g of flour, which is enought for five 250g pizza balls 
 
 ## Procedures
 
 It is important to use scales.
 #### Dough
 1. Put cold water in a container
-2. Add yeasts and wait 10 minutes - helps to soak and dissolve
-3. Add flour and salt
-4. Kneed 100 times in the container and set it aside closed for 
-15-30 minutes
-The gluten will start building which will make kneeding much easier
-5. Move the dough to the counter and kneed 500 times. I usually do series
-of 80 + 20 kneedings where 20 with stretch and fold technique
-6. Set aside closed for an hour
-7. Make balls of 250g and put it in a fridge for a night
-8. In the morning take one or more balls and put in a bowl. Close it with
-plastic wrap and leave in a room temperature for rising. The rising time
-depends on amount of yeasts and room temperature. For our quantities and
-20 degrees it takes about 8 hours. Note, that each day you will have dough
-with different degree of fermentatnion resulting in different flavor
+2. Add yeast and wait 10 minutes to help it soak and dissolve
+3. Add the flour and salt
+4. Knead 100 times in the container, then set it aside for 15-30 minutes
+with the container closed. The gluten will start to build up, making
+kneeding much easier
+5. Transfer the dough to the counter and knead 500 times. I usually do a series
+of 80 + 20 kneedings, 20 of which use the stretch-and-fold technique
+6. Set aside, covered, for an hour
+7. Make 250g balls and put them in the fridge overnight
+8. In the morning take one or more of the balls and place them in a bowl. Close
+with cling film and leave at room temperature to rise. The rising time
+depends on the amount of yeast and the room temperature. For our quantities and
+20C it takes about 8 hours. Note, that each day you will have dough
+with a different degree of fermentation, resulting in a different flavour
 
-#### Pizza sause
-1. I do not recommend to use tomato paste because it is very thich and
-concentrated with very acidic and contrast flavor
-2. Use canned tomatoes or grated tomates
-3. Sometimes I use tomatoes from a market, but it requires some work as
-they have more water
-    a. Put in bowling water for 1 minute
-    b. Peel the skin off
-    c. Grate tomatoes
-    d. Put the puree to a pan to reduce water
-    e. Add basil, herbs
+#### Pizza sauce
+1. I do not recommend using tomato paste because it is very thick and
+concentrated with a very acidic and contrasting flavour
+2. Use canned tomatoes or grated tomatoes
+3. Sometimes I use fresh tomatoes, but they require more work as
+they contain more water
+    a. Put them in boiling water for one minute
+    b. Peel off the skin
+    c. Grate the tomatoes
+    d. Put the puree in a medium heat pan to reduce the water
+    e. Add basil and other herbs
 
 #### Toppings
-The rule - the more moisture the topping ingridients have the more soggy pizza
-will be. If you want crispy bottom you need a very hot oven or less toppings.
-Keep it simple - pizza sause, little low moisture cheese
+The rule is that the more moisture the topping ingredients have the soggier the
+pizza will be. If you want a crispy base, use a very hot oven or fewer toppings.
+Keep it simple: pizza sauce and a little low-moisture cheese
 
 #### Baking
-1. 
-
+1. Preheat the oven for 30 minutes to 1 hour. 270 C or more
+2. Stretch the dough to form a thin circle with raised edges
+3. Add the tomato sauce
+4. Bake for two minutes
+5. Add the toppings
+6. Bake until brown
 
 ## Test collapsable
-123inline css styled
-<details style="display: inline-block">
-<summary>Click to expand the text</summary>
-![dough after 100](/assets/cooking/pizza/after-100-kneeds.jpg)
-</details>
 
-456newline
 <details>
 <summary>Click to expand the text</summary>
 ![dough after 100](/assets/cooking/pizza/after-100-kneeds.jpg)
 </details>
-
-789inline<details><summary>Click to expand the text</summary>![dough after 100](/assets/cooking/pizza/after-100-kneeds.jpg)</details>
