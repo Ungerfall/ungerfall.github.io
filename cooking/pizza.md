@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Pizza"
+title: "Pizza" ![pizza](/assets/cooking/pizza/pizza.jpg)
+toc: true
 ---
 
 ## Ingredients
