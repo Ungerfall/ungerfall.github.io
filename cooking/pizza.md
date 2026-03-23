@@ -1,11 +1,10 @@
 ---
 layout: page
 title: "Pizza"
-toc: true
 ---
 ![pizza](/assets/cooking/pizza/pizza.jpg)
 
-{% toc %}
+{:toc}
 
 ## Ingredients
 ![pizza ingredients](/assets/cooking/pizza/ingredients.jpg)
