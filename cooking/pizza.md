@@ -6,7 +6,6 @@ toc: true
 ![pizza](/assets/cooking/pizza/pizza.jpg)
 
 ## Ingredients
-![pizza ingredients](/assets/cooking/pizza/ingredients.jpg)
 
 1. Flour - at least 12.5 g of protein per 100g
 2. Water - cold
@@ -15,6 +14,10 @@ toc: true
 5. Tomato sauce
 6. Cheese - mozzarella, kashar or dil
 7. Seasonings - Italian herbs, olive oil
+    <details>
+        <summary>Click to see the image</summary>
+        <img src="/assets/cooking/pizza/ingredients.jpg" />
+    </details>
 
 ## Quantities
 
