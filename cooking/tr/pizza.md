@@ -39,8 +39,8 @@ bekletin. Glüten oluşmaya başlayacak ve bu sayede
 yoğurma işlemi çok daha kolay hale gelecektir
     <details>
         <summary>Resmi görmek için tıklayın</summary>
-        <img src="/assets/cooking/pizza/after-100-kneeds.jpg" />
-        <img src="/assets/cooking/pizza/after-100-kneeds-and-rest.jpg" />
+        <img src="/assets/cooking/pizza/after-100-knead.jpg" />
+        <img src="/assets/cooking/pizza/after-100-knead-and-rest.jpg" />
     </details>
 
 5. Hamuru tezgâha alın ve 500 kez yoğurun. Ben genellikle
@@ -48,7 +48,7 @@ yoğurma işlemi çok daha kolay hale gelecektir
 6. Üzerini örtüp bir saat bekletin
     <details>
         <summary>Resmi görmek için tıklayın</summary>
-        <img src="/assets/cooking/pizza/after-500-kneeds.jpg" />
+        <img src="/assets/cooking/pizza/after-500-knead.jpg" />
     </details>
 
 7. 250 gramlık toplar yapın ve bir gece buzdolabında bekletin 

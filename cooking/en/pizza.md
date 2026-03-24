@@ -25,7 +25,7 @@ toc: true
 This gives a dough hydration of 62%, which is not sticky to knead yet soft.
 2. Salt: 2% (2g of salt for every 100g of flour ).
 3. Yeast: 0.25% (for every 100g of flour, use 0.25g of yeast).
-I usually use 800g of flour, which is enought for five 250g pizza balls 
+I usually use 800g of flour, which is enough for five 250g pizza balls 
 
 ## Procedures
 
@@ -36,19 +36,19 @@ It is important to use scales.
 3. Add the flour and salt
 4. Knead 100 times in the container, then set it aside for 15-30 minutes
 with the container closed. The gluten will start to build up, making
-kneeding much easier
+kneading much easier
     <details>
         <summary>Click to see the image</summary>
-        <img src="/assets/cooking/pizza/after-100-kneeds.jpg" />
-        <img src="/assets/cooking/pizza/after-100-kneeds-and-rest.jpg" />
+        <img src="/assets/cooking/pizza/after-100-knead.jpg" />
+        <img src="/assets/cooking/pizza/after-100-knead-and-rest.jpg" />
     </details>
 
 5. Transfer the dough to the counter and knead 500 times. I usually do a series
-of 80 + 20 kneedings, 20 of which use the stretch-and-fold technique
+of 80 + 20 knead, 20 of which use the stretch-and-fold technique
 6. Set aside, covered, for an hour
     <details>
         <summary>Click to see the image</summary>
-        <img src="/assets/cooking/pizza/after-500-kneeds.jpg" />
+        <img src="/assets/cooking/pizza/after-500-knead.jpg" />
     </details>
 
 7. Make 250g balls and put them in the fridge overnight
